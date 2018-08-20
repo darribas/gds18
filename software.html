@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Dani Arribas-Bel">
+  <meta name="description" content="An introduction to Geographic Data Science">
+
+  <title>GDS18 &mdash; Software</title>
+
+  <link href="/gds18/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/gds18/assets/css/course-site-custom.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="/gds18/assets/js/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6032674-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/gds18/index.html"><font
+                                color='#be1e2d'>GDS18</font></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/gds18/index.html">Home</a></li>
+          <li><a href="/gds18/overview.html">Overview</a></li>
+          <li><a href="/gds18/syllabus.html">Syllabus</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle"
+                data-toggle="dropdown">Lectures <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              
+              
+              <li><a href="/gds18/notes/Class_01.html">Week 1 - Introduction</a></li>
+              
+              <li><a href="/gds18/notes/Class_02.html">Week 2 - Geo-Data</a></li>
+              
+              <li><a href="/gds18/notes/Class_03.html">Week 3 - (Geo)Visualization</a></li>
+              
+              <li><a href="/gds18/notes/Class_04.html">Week 4 - Choropleth mapping</a></li>
+              
+              <li><a href="/gds18/notes/Class_05.html">Week 5 - Spatial Weights</a></li>
+              
+              <li><a href="/gds18/notes/Class_06.html">Week 6 - ESDA</a></li>
+              
+              <li><a href="/gds18/notes/Class_07.html">Week 7 - Clustering</a></li>
+              
+              <li><a href="/gds18/notes/Class_08.html">Week 8 - Points</a></li>
+              
+              <li><a href="/gds18/notes/Class_09.html">Week 09 - Causal Inference</a></li>
+              
+              <li><a href="/gds18/notes/Class_10.html">Week 10 - Assignment 1 recap</a></li>
+              
+              <li><a href="/gds18/notes/Class_11.html">Week 11 - Geographic Data Science in Action</a></li>
+              
+              
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Labs <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              
+              
+              <li><a href="/gds18/labs/Lab_00.html">Lab 0 - Tools</a></li>
+              
+              <li><a href="/gds18/labs/Lab_01.html">Lab 1 - Tidy Data</a></li>
+              
+              <li><a href="/gds18/labs/Lab_02.html">Lab 2 - (Geo)Visualization</a></li>
+              
+              <li><a href="/gds18/labs/Lab_03.html">Lab 3 - Automated choropleths</a></li>
+              
+              <li><a href="/gds18/labs/Lab_04.html">Lab 4 - Spatial Weights</a></li>
+              
+              <li><a href="/gds18/labs/Lab_05.html">Lab 5 - ESDA</a></li>
+              
+              <li><a href="/gds18/labs/Lab_06.html">Lab 6 - Clustering</a></li>
+              
+              <li><a href="/gds18/labs/Lab_07.html">Lab 7 - Points</a></li>
+              
+              
+            </ul>
+          </li>
+          <li><a href="/gds18/assignments.html">Assessment</a></li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle"
+                data-toggle="dropdown">Resources <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+          <li><a href="/gds18/bibliography.html">Bibliography</a></li>
+          <li><a href="/gds18/datasets.html">Datasets</a></li>
+          <li><a href="/gds18/software.html">Software</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container" id="body">
+    
+<h1 id="software">Software</h1>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th><CENTER>OS</CENTER></th>
+      <th> </th>
+      <th><CENTER>Status</CENTER></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Linux &amp; macOS</td>
+      <td> </td>
+      <td><a href="https://travis-ci.org/darribas/gds17"><img src="https://travis-ci.org/darribas/gds17.svg?branch=master" alt="Build Status" /></a></td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td> </td>
+      <td><a href="https://ci.appveyor.com/project/darribas/gds17"><img src="https://ci.appveyor.com/api/projects/status/ffyxalxow6jcs12u?svg=true" alt="Build status" /></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<p>This course is best followed if you can reproduce the examples and tutorials provided with it. To do so, you will need to install in your machine a series of software packages. These are all open-source and available for free to download. Although there are several ways to approach this process, we first enumerate here the list of dependencies and then show two simple approaches to install them in different platforms.</p>
+
+<h2 id="complementary-material-to-this-guide">Complementary material to this guide</h2>
+
+<p>This guide assumes you have the following additional files, available to download by clicking (to download them, right click on the link and select the “save as” option):</p>
+
+<ul>
+  <li><a href="content/infrastructure/install_gds_stack.yml"><code class="highlighter-rouge">install_gds_stack.yml</code></a></li>
+  <li><a href="content/infrastructure/check_gds_stack.ipynb"><code class="highlighter-rouge">check_gds_stack.ipynb</code></a></li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="anaconda">Anaconda</h3>
+
+<p>The easiest way to install locally and natively the software stack required is to install a full scientific Python distribution. Although other good alternatives are also available (e.g. <a href="https://www.enthought.com/products/canopy/">Canopy</a>, <a href="http://www.sagemath.org">Sage</a>), we recommend to install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>. Make sure, whichever option you pick, to install a <strong>Python 3.5</strong> version, NOT Python 2. Please follow the instructions provided in the link for installation.</p>
+
+<p>Once you have a fully working Anaconda distribution installed in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on.</p>
+
+<h4 id="macoslinux">macOS/Linux</h4>
+
+<p>Open up a terminal (“Applications –&gt; Utilities –&gt; Terminal” in macOS and  “ctr+alt+T” in Linux) and run the following commands:</p>
+
+<ul>
+  <li>
+    <p>Navigate to the folder where this file is (e.g. Downloads):</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cd /path/to/folder/
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Execute the following command:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda-env create -f install_gds_stack.yml
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Once this has run, you should be able to activate the environment:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  source activate gds
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="windows">Windows</h4>
+
+<p>Open up the Anaconda Command Prompt (search for it on the Startup Menu) and run the following commands:</p>
+
+<ul>
+  <li>
+    <p>Navigate to the folder where this file is (e.g. Downloads):</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cd /path/to/folder/
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Execute the following command:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda-env create -f install_gds_stack.yml
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Once this has run, you should be able to activate the environment:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  activate gds
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="check">Check</h2>
+
+<p>To check things have installed correctly, an additional file is included, <code class="highlighter-rouge">check_gds_stack.ipynb</code>. To run the check, open a terminal (macOS/Linux) or the Anaconda Command Prompt (Windows), navigate to the folder as showed above and activate the environment:</p>
+
+<ul>
+  <li>
+    <p>macOS/Linux:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  source activate gds
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Windows:</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  activate gds
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>You should now see <code class="highlighter-rouge">(gds)</code> on the beginning of the line at the terminal/command prompt. You can now run the test as:</p>
+
+<p><code class="highlighter-rouge">jupyter nbconvert --execute check_gds_stack.ipynb</code></p>
+
+<p>This will run and, when finished, produce an HTML file in the same folder. Open it and check there are no errors reported. If that is the case, you are good to go!</p>
+
+<h2 id="dependencies">Dependencies</h2>
+
+<p>The course requires the following libraries to be installed on your machine. The guide above provides instructions to install them satisfactory but, in case you want to install them separately on your own (recommended only if you know what you’re doing), this is the list:</p>
+
+<ul>
+  <li><a href="http://ipython.org"><code class="highlighter-rouge">IPython</code></a></li>
+  <li><a href="https://jupyter.org"><code class="highlighter-rouge">Jupyter</code></a></li>
+  <li><a href="https://www.python.org">Python 3.5</a></li>
+</ul>
+
+<hr />
+
+<ul>
+  <li><a href="http://bokeh.pydata.org/en/latest/"><code class="highlighter-rouge">bokeh</code></a></li>
+  <li><a href="http://matplotlib.org"><code class="highlighter-rouge">matplotlib</code></a></li>
+  <li><a href="https://github.com/jwass/mplleaflet"><code class="highlighter-rouge">mplleaflet</code></a></li>
+  <li><a href="http://stanford.edu/~mwaskom/software/seaborn/"><code class="highlighter-rouge">seaborn</code></a></li>
+</ul>
+
+<hr />
+
+<ul>
+  <li><a href="https://github.com/quantopian/qgrid"><code class="highlighter-rouge">qgrid</code></a></li>
+  <li><a href="http://pandas.pydata.org"><code class="highlighter-rouge">pandas</code></a></li>
+  <li><a href="http://scikit-learn.org/stable/index.html"><code class="highlighter-rouge">scikit-learn</code></a></li>
+  <li><a href="http://www.statsmodels.org/stable/index.html"><code class="highlighter-rouge">statsmodels</code></a></li>
+  <li><a href="https://pypi.python.org/pypi/xlrd"><code class="highlighter-rouge">xlrd</code></a></li>
+  <li><a href="https://xlsxwriter.readthedocs.io"><code class="highlighter-rouge">xlsxwriter</code></a></li>
+</ul>
+
+<hr />
+
+<ul>
+  <li><a href="http://geopandas.org"><code class="highlighter-rouge">geopandas</code></a></li>
+  <li><a href="http://pysal.org"><code class="highlighter-rouge">PySAL</code></a></li>
+  <li><a href="https://pypi.python.org/pypi/rasterio/"><code class="highlighter-rouge">rasterio</code></a></li>
+</ul>
+
+
+  </div>
+
+  <div id="footer">
+    <div class="container text-muted small">
+      Content by <a href="http://darribas.org">Dani Arribas-Bel</a>.
+
+
+  Content licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0</a>.
+
+
+Created with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
+
+
+
+    </div>
+  </div>
+
+<!--jQuery & Twitter Bootstrap JavaScript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/gds18/assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
