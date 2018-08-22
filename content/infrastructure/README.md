@@ -9,7 +9,7 @@
 
 ---
 
-This course is best followed if you can reproduce the examples and tutorials provided with it. To do so, you will need to install in your machine a series of software packages. These are all open-source and available for free to download. Although there are several ways to approach this process, we first enumerate here the list of dependencies and then show two simple approaches to install them in different platforms.
+This course is best followed if you can reproduce the examples and tutorials provided with it. To do so, you will need to install in your machine a series of software packages. These are all open-source and available for free to download.
 
 ## Complementary material to this guide
 
@@ -20,11 +20,11 @@ This guide assumes you have the following additional files, available to downloa
 
 ## Installation
 
-### Anaconda
+### Conda
 
-The easiest way to install locally and natively the software stack required is to install a full scientific Python distribution. Although other good alternatives are also available (e.g. [Canopy](https://www.enthought.com/products/canopy/), [Sage](http://www.sagemath.org)), we recommend to install [Anaconda](https://store.continuum.io/cshop/anaconda/). Make sure, whichever option you pick, to install a **Python 3.5** version, NOT Python 2. Please follow the instructions provided in the link for installation.
+The easiest way to install locally and natively the software stack required is to install a full scientific Python distribution. Although other good alternatives are also available (e.g. [Canopy](https://www.enthought.com/products/canopy/), [Sage](http://www.sagemath.org)), we recommend to install [Miniconda](https://conda.io/miniconda.html). Make sure, whichever option you pick, to install a **Python 3.6** version, NOT Python 2. Please follow the instructions provided in the link for installation.
 
-Once you have a fully working Anaconda distribution installed in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on. 
+Once you have a fully working conda installation in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on. 
 
 #### macOS/Linux
 
@@ -92,35 +92,5 @@ You should now see `(gds)` on the beginning of the line at the terminal/command 
 `jupyter nbconvert --execute check_gds_stack.ipynb`
 
 This will run and, when finished, produce an HTML file in the same folder. Open it and check there are no errors reported. If that is the case, you are good to go!
-
-## Dependencies
-
-The course requires the following libraries to be installed on your machine. The guide above provides instructions to install them satisfactory but, in case you want to install them separately on your own (recommended only if you know what you're doing), this is the list:
-
-* [`IPython`](http://ipython.org) 
-* [`Jupyter`](https://jupyter.org)
-* [Python 3.5](https://www.python.org)
-
----
-
-* [`bokeh`](http://bokeh.pydata.org/en/latest/)
-* [`matplotlib`](http://matplotlib.org)
-* [`mplleaflet`](https://github.com/jwass/mplleaflet)
-* [`seaborn`](http://stanford.edu/~mwaskom/software/seaborn/)
-
----
-
-* [`qgrid`](https://github.com/quantopian/qgrid)
-* [`pandas`](http://pandas.pydata.org)
-* [`scikit-learn`](http://scikit-learn.org/stable/index.html)
-* [`statsmodels`](http://www.statsmodels.org/stable/index.html)
-* [`xlrd`](https://pypi.python.org/pypi/xlrd)
-* [`xlsxwriter`](https://xlsxwriter.readthedocs.io)
-
----
-
-* [`geopandas`](http://geopandas.org)
-* [`PySAL`](http://pysal.org)
-* [`rasterio`](https://pypi.python.org/pypi/rasterio/)
 
 

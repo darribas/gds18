@@ -6,6 +6,7 @@ dependencies:
   - python=3.6
   - pip
   - bokeh
+  - contextily
   - dask
   - datashader
   - feather-format
@@ -20,7 +21,6 @@ dependencies:
   - palettable
   - pillow
   - pip:
-      - contextily
       - geopy
       - polyline
   - pysal
