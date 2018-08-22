@@ -140,19 +140,19 @@
     <tr>
       <td>Linux &amp; macOS</td>
       <td> </td>
-      <td><a href="https://travis-ci.org/darribas/gds17"><img src="https://travis-ci.org/darribas/gds17.svg?branch=master" alt="Build Status" /></a></td>
+      <td><a href="https://travis-ci.org/darribas/gds18"><img src="https://travis-ci.org/darribas/gds18.svg?branch=master" alt="Build Status" /></a></td>
     </tr>
     <tr>
       <td>Windows</td>
       <td> </td>
-      <td><a href="https://ci.appveyor.com/project/darribas/gds17"><img src="https://ci.appveyor.com/api/projects/status/ffyxalxow6jcs12u?svg=true" alt="Build status" /></a></td>
+      <td><a href="https://ci.appveyor.com/project/darribas/gds18"><img src="https://ci.appveyor.com/api/projects/status/ffyxalxow6jcs12u?svg=true" alt="Build status" /></a></td>
     </tr>
   </tbody>
 </table>
 
 <hr />
 
-<p>This course is best followed if you can reproduce the examples and tutorials provided with it. To do so, you will need to install in your machine a series of software packages. These are all open-source and available for free to download. Although there are several ways to approach this process, we first enumerate here the list of dependencies and then show two simple approaches to install them in different platforms.</p>
+<p>This course is best followed if you can reproduce the examples and tutorials provided with it. To do so, you will need to install in your machine a series of software packages. These are all open-source and available for free to download.</p>
 
 <h2 id="complementary-material-to-this-guide">Complementary material to this guide</h2>
 
@@ -165,11 +165,11 @@
 
 <h2 id="installation">Installation</h2>
 
-<h3 id="anaconda">Anaconda</h3>
+<h3 id="conda">Conda</h3>
 
-<p>The easiest way to install locally and natively the software stack required is to install a full scientific Python distribution. Although other good alternatives are also available (e.g. <a href="https://www.enthought.com/products/canopy/">Canopy</a>, <a href="http://www.sagemath.org">Sage</a>), we recommend to install <a href="https://store.continuum.io/cshop/anaconda/">Anaconda</a>. Make sure, whichever option you pick, to install a <strong>Python 3.5</strong> version, NOT Python 2. Please follow the instructions provided in the link for installation.</p>
+<p>The easiest way to install locally and natively the software stack required is to install a full scientific Python distribution. Although other good alternatives are also available (e.g. <a href="https://www.enthought.com/products/canopy/">Canopy</a>, <a href="http://www.sagemath.org">Sage</a>), we recommend to install <a href="https://conda.io/miniconda.html">Miniconda</a>. Make sure, whichever option you pick, to install a <strong>Python 3.6</strong> version, NOT Python 2. Please follow the instructions provided in the link for installation.</p>
 
-<p>Once you have a fully working Anaconda distribution installed in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on.</p>
+<p>Once you have a fully working conda installation in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on.</p>
 
 <h4 id="macoslinux">macOS/Linux</h4>
 
@@ -245,44 +245,6 @@
 <p><code class="highlighter-rouge">jupyter nbconvert --execute check_gds_stack.ipynb</code></p>
 
 <p>This will run and, when finished, produce an HTML file in the same folder. Open it and check there are no errors reported. If that is the case, you are good to go!</p>
-
-<h2 id="dependencies">Dependencies</h2>
-
-<p>The course requires the following libraries to be installed on your machine. The guide above provides instructions to install them satisfactory but, in case you want to install them separately on your own (recommended only if you know what you’re doing), this is the list:</p>
-
-<ul>
-  <li><a href="http://ipython.org"><code class="highlighter-rouge">IPython</code></a></li>
-  <li><a href="https://jupyter.org"><code class="highlighter-rouge">Jupyter</code></a></li>
-  <li><a href="https://www.python.org">Python 3.5</a></li>
-</ul>
-
-<hr />
-
-<ul>
-  <li><a href="http://bokeh.pydata.org/en/latest/"><code class="highlighter-rouge">bokeh</code></a></li>
-  <li><a href="http://matplotlib.org"><code class="highlighter-rouge">matplotlib</code></a></li>
-  <li><a href="https://github.com/jwass/mplleaflet"><code class="highlighter-rouge">mplleaflet</code></a></li>
-  <li><a href="http://stanford.edu/~mwaskom/software/seaborn/"><code class="highlighter-rouge">seaborn</code></a></li>
-</ul>
-
-<hr />
-
-<ul>
-  <li><a href="https://github.com/quantopian/qgrid"><code class="highlighter-rouge">qgrid</code></a></li>
-  <li><a href="http://pandas.pydata.org"><code class="highlighter-rouge">pandas</code></a></li>
-  <li><a href="http://scikit-learn.org/stable/index.html"><code class="highlighter-rouge">scikit-learn</code></a></li>
-  <li><a href="http://www.statsmodels.org/stable/index.html"><code class="highlighter-rouge">statsmodels</code></a></li>
-  <li><a href="https://pypi.python.org/pypi/xlrd"><code class="highlighter-rouge">xlrd</code></a></li>
-  <li><a href="https://xlsxwriter.readthedocs.io"><code class="highlighter-rouge">xlsxwriter</code></a></li>
-</ul>
-
-<hr />
-
-<ul>
-  <li><a href="http://geopandas.org"><code class="highlighter-rouge">geopandas</code></a></li>
-  <li><a href="http://pysal.org"><code class="highlighter-rouge">PySAL</code></a></li>
-  <li><a href="https://pypi.python.org/pypi/rasterio/"><code class="highlighter-rouge">rasterio</code></a></li>
-</ul>
 
 
   </div>

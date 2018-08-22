@@ -2,26 +2,28 @@
 name: gds
 channels:
   - conda-forge
-  - ioos
-  - defaults
-  - bokeh
 dependencies:
-  - python=3.5
+  - python=3.6
   - pip
   - bokeh
-  - cartopy
+  - contextily
   - dask
+  - datashader
+  - feather-format
   - geopandas
-  - ipython
+  - hdbscan
+  - ipyleaflet
   - ipywidgets
-  - jupyter
   - mkl-service
   - mplleaflet
   - networkx
+  - osmnx
   - palettable
   - pillow
   - pip:
-        - contextily
+      - geopy
+      - polyline
+  - pysal
   - qgrid
   - rasterio
   - scikit-learn

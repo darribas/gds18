@@ -2,8 +2,8 @@
 
 | OS      | Status |
 | ------- | -----------------|
-| Linux & macOS   | [![Build Status](https://travis-ci.org/darribas/gds17.svg?branch=master)](https://travis-ci.org/darribas/gds17) |
-| Windows | [![Build status](https://ci.appveyor.com/api/projects/status/nlobj16coto8k0rv?svg=true)](https://ci.appveyor.com/project/darribas/gds17) |
+| Linux & macOS   | [![Build Status](https://travis-ci.org/darribas/gds18.svg?branch=master)](https://travis-ci.org/darribas/gds18) |
+| Windows | [![Build status](https://ci.appveyor.com/api/projects/status/nlobj16coto8k0rv?svg=true)](https://ci.appveyor.com/project/darribas/gds18) |
 
 * [Dani Arribas-Bel](http://darribas.org) ([@darribas](http://darribas.org))
 
@@ -14,7 +14,7 @@ last-year undergraduate and master students.
 This repository contains all the materials used, but the preferred way to
 access them is through the website:
 
-> [http://darribas.org/gds17](http://darribas.org/gds17)
+> [http://darribas.org/gds18](http://darribas.org/gds18)
 
 **NOTE**: This course is an evolution and update of [GDS'16](http://darribas.org/gds16).
 
@@ -26,11 +26,11 @@ If you use material from this course, I would appreciate if you used the
 following citation:
 
 ```
-@online{darribas_gds17,
+@online{darribas_gds18,
   author = {Dani Arribas-Bel},
   title = {Geographic Data Science'17},
   year = 2018,
-  url = {http://darribas.org/gds17},
+  url = {http://darribas.org/gds18},
   urldate = {2018-01-04},
   doi = {10.5281/zenodo.1135210}
 }
