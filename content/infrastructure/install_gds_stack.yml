@@ -15,6 +15,7 @@ dependencies:
   - hdbscan
   - ipyleaflet
   - ipywidgets
+  - jupyterlab
   - mkl-service
   - mplleaflet
   - networkx
