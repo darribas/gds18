@@ -25,7 +25,7 @@ dependencies:
   - pillow
   - pip:
       - geopy
-      - contextily=1.0rc1
+      - contextily==1.0rc1
       - polyline
   - pysal
   - qgrid
