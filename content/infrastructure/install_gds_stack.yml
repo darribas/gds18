@@ -8,6 +8,7 @@ dependencies:
   - pip
   - bokeh
   - contextily
+  - cython
   - dask
   - datashader
   - feather-format
@@ -24,6 +25,7 @@ dependencies:
   - pillow
   - pip:
       - geopy
+      - contextily==1.0rc1
       - polyline
   - pysal
   - qgrid

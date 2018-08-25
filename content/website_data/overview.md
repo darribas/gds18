@@ -24,7 +24,7 @@ By the end of the course, students will be able to:
 
 The student will receive feedback through the following channels:
 
-* Formal assessment of two summative assignments. This will be on the form of reasoning of the mark assigned as well as comments specifying how the mark could be improved. This will be provided no later than three working weeks after the deadline of the assignment submission.
+* Formal assessment of three summative assignments: two tests and a computational essay. This will be on the form of reasoning of the mark assigned as well as comments specifying how the mark could be improved. This will be provided no later than three working weeks after the deadline of the assignment submission.
 * Direct interaction with Module Leader and demonstrators in the computer labs. This will take place in each of the scheduled lab sessions of the course.
 * Online forum maintained by the Module Leader where students can contribute by asking and answering questions related to the module.
 
@@ -32,7 +32,7 @@ The student will receive feedback through the following channels:
 
 Access to materials, including lecture slides and lab notebooks, is centralized through the 
 use of a course website available in the following url:
-[`http://darribas.org/gds17`](http://darribas.org/gds17)
+[`http://darribas.org/gds18`](http://darribas.org/gds18)
 
 Specific readings, videos, and/or podcasts, as well as academic references will be provided for each lecture and lab, and can be accessed through the course website.
 
