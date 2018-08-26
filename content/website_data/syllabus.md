@@ -26,7 +26,9 @@
 ##### Week 5: Spatial Weights
 
 * Lecture: [Spatial Weights](notes/Class_05.html).
-* Tutorial: [Spatial Weights with PySAL](labs/Lab_04.html).
+* Tutorial: 
+    - [**TEST 1**](assignments.html#task_01) (1h): Friday Oct. 26th
+    - [Spatial Weights with PySAL](labs/Lab_04.html).
 
 ##### Week 6: ESDA
 
@@ -35,37 +37,42 @@
 
 -----
 
-##### Week 7: Clustering
+##### Week 7: Break
 
-[**ASSIGNMENT 1**](assignments.html#task_01) due on Wednesday, November 8th-2017.
+There will be no lecture or lab this week
 
-* Lecture: [Clustering](notes/Class_07.html).
+-----
+
+##### Week 8: Clustering
+
+* Lecture: [Clustering](notes/Class_08.html).
 * Tutorial: [Geodemographic analysis](labs/Lab_06.html).
 
-##### Week 8: Point Data
+##### Week 9: Point Data
 
-* Lecture: [Point Data](notes/Class_08.html).
+* Lecture: [Point Data](notes/Class_09.html).
 * Tutorial: [Exploring Twitter patterns](labs/Lab_07.html).
 
 -----
 
-##### Week 9: (Spatial) causal inference
+##### Week 10: (Spatial) causal inference
 
-* Lecture: [Spatial causal inference](notes/Class_09.html).
+* Lecture: [Spatial causal inference](notes/Class_10.html).
+* Tutorial: 
+    - [**TEST 2**](assignments.html#task_02) (1h): Friday Nov. 30th
+    - Assignment Clinic
+
+##### Week 11
+
+* Lecture: [Assignment preparation](notes/Class_11.html).
 * Tutorial: Assignment Clinic.
 
-##### Week 10
+##### Week 12: Geographic Data Science in Action
 
-* Lecture: [Assignment 1 recap](notes/Class_10.html).
+* Lecture: Geographic Data Science *in the wild*.
 * Tutorial: Assignment Clinic.
 
-##### Week 11: Geographic Data Science in Action
+[**ASSIGNMENT**](assignments.html#task_02) due on Friday, December
+14th-2018.
 
-* Lecture: [Geographic Data Science *in the wild*](notes/Class_11.html).
-* Tutorial: Assignment Clinic.
-
-##### Week 12
-
-[**ASSIGNMENT 2**](assignments.html#task_02) due on Monday, December
-11th-2017.
 

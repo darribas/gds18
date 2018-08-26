@@ -1,5 +1,5 @@
 ---
-title: Week 09 - Causal Inference
+title: Week 9 - Points
 ---
 
 ### Slides
@@ -9,13 +9,12 @@ title: Week 09 - Causal Inference
 
 ### To do before class
 
-* Talk by Dan Graham ([22min. video](https://www.youtube.com/watch?v=acKGyMRIxYc)) where he clearly explains the main issues about causality using transport studies as the domain of application.
-* Talk by George Davey Smith about causality in epidemiology ([30min. video](https://www.youtube.com/watch?v=3v1-kNLfhvg)). Some of the concepts here are a bit advanced, but the examples are great.
+* Lecture on  "Point Pattern Analysis Basics" by Luc Anselin ([link](https://www.youtube.com/watch?v=Z2iT4JpqGZg&list=PLzREt6r1NenlmAiF3ds5_WGVAG1rTYSK-&index=1) to 45min video, and [link](https://www.youtube.com/watch?v=BN94XXT6Io4) to a more recent 6min intro).
 
 ### Related readings
 
-* Chapter 9 of {% cite gelman2006data %} is a good introduction into causality in regression models. Chapter 10 of the same book covers a bit more advanced topics.
-* {% cite angrist2008mostly %} is one of the best treatments of causal inference but is not entirely introductory. A gentler coverage of similar topics is available on a more recent book {% cite angrist2014mastering %}.
+* This class was partially based on {% cite rey2015gis471l4 %}.
+* The slides for this lecture were also inspired by Part 6 in {% cite brunsdoncomber2015 %}. 
 
 ### References
 
