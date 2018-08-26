@@ -7,13 +7,13 @@ Welcome to Geographic Data Science, a course taught by Dr. Dani Arribas-Bel in t
 
 The timetable for the course is:
 
-* **Lectures**: *Mondays* 9:00am-10:00am, `CTH-LTC`
-* **Computer Labs**: *Mondays* 11:00am-1:00pm, `ENG-HHTC`
+* **Lectures**: *Tuesdays* 9:00am-10:00am, `ERB-HLT`
+* **Computer Labs**: *Fridays* 9:00am-11:00am, `HHUGES-HHTC`
 
 ### Locations
 
-* `CTH-LTC`: Central Teaching Hub - Lecture Theatre C [[Map](https://www.openstreetmap.org/?mlat=53.40521&mlon=-2.96326#map=19/53.40521/-2.96326)]
-* `ENG-HHTC`: Harrison Hughes Building (Engineering), Computer lab (top floor) [[Map](http://www.openstreetmap.org/?mlat=53.40640&mlon=-2.96744#map=18/53.40640/-2.96744)]
+* `ERB-HLT`: Eleanor Rathbone Building - Lesley Hearnshaw Theatre [[URL](https://www.liverpool.ac.uk/intranet/timetabling/online-room-catalogue/eleanor-rathbone/lesleyhearnshawtheatre/)]
+* `HHUGES-HHTC`: Harrison Hughes Building (Engineering), Computer lab (top floor) [[URL](https://www.liverpool.ac.uk/intranet/timetabling/online-room-catalogue/eng-building/eng-hhtc/)]
 
 ### Contact
 

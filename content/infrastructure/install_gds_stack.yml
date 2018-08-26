@@ -7,7 +7,7 @@ dependencies:
   - python=3.6
   - pip
   - bokeh
-  - contextily
+  - contextily==1.0rc1
   - cython
   - dask
   - datashader
@@ -25,7 +25,6 @@ dependencies:
   - pillow
   - pip:
       - geopy
-      - contextily==1.0rc1
       - polyline
   - pysal
   - qgrid
