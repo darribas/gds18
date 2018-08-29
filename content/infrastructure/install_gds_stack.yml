@@ -26,6 +26,7 @@ dependencies:
   - pip:
       - geopy
       - polyline
+  - pyhamcrest
   - pysal
   - pytest
   - qgrid
