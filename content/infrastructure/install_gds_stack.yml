@@ -27,6 +27,7 @@ dependencies:
       - geopy
       - polyline
   - pysal
+  - pytest
   - qgrid
   - rasterio
   - scikit-learn
