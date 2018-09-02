@@ -24,7 +24,6 @@ dependencies:
   - palettable
   - pillow
   - pip:
-      - cenpy
       - geopy
       - polyline
   - pyhamcrest
