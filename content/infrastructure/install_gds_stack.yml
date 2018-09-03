@@ -27,7 +27,7 @@ dependencies:
       - geopy
       - polyline
   - pyhamcrest
-  - pysal
+  - pysal==1.14
   - pytest
   - qgrid
   - rasterio
