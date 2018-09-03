@@ -1,8 +1,8 @@
 # Run `conda-env create -f install_gds_stack.yml`
 name: gds
 channels:
-  - defaults
   - conda-forge
+  - defaults
 dependencies:
   - python=3.6
   - pip
