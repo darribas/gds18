@@ -19,4 +19,7 @@ layout: default
 {% capture task_02 %}{% include_relative content/website_data/task_02.md %}{% endcapture %}
 {{ task_02 | markdownify }}
 
+{% capture task_03 %}{% include_relative content/website_data/task_03.md %}{% endcapture %}
+{{ task_03 | markdownify }}
+
 
