@@ -72,7 +72,7 @@ There will be no lecture or lab this week
 * Lecture: Geographic Data Science *in the wild*.
 * Tutorial: Assignment Clinic.
 
-[**ASSIGNMENT**](assignments.html#task_02) due on Friday, December
+[**ASSIGNMENT**](assignments.html#task_03) due on Friday, December
 14th-2018.
 
 
