@@ -22,6 +22,7 @@ The contents of this lecture are loosely based on, and explored into further det
 * **[Recommended]** "Chapter 1: Introduction" {% cite schutt2013doing %}. Free sampler of the book containing the chapter available online ([html](http://shop.oreilly.com/product/0636920028529.do), [pdf](http://cdn.oreillystatic.com/oreilly/booksamplers/9781449358655_sampler.pdf)).
 * A very influential pro-big data/data science article {% cite anderson2008end %}. 
 * A reflexive call of caution {% cite Lazer14032014 %}.
+* Excellent overview of Data Science {% cite donoho201750 %}.
 
 ### References
 

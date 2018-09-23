@@ -16,12 +16,12 @@
 * Lecture: [(Geo)Visualization](notes/Class_03.html).
 * Tutorial: [Manipulating geospatial data in Python](labs/Lab_02.html).
 
+-----
+
 ##### Week 4: Choropleth mapping
 
 * Lecture: [Choropleth mapping](notes/Class_04.html).
 * Tutorial: [Mapping deprivation](labs/Lab_03.html).
-
------
 
 ##### Week 5: Spatial Weights
 
