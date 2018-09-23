@@ -1,5 +1,5 @@
 ---
-title: Lab 6 - Clustering
+title: Lab 6 - ESDA
 ---
 
 ### Notebook
@@ -10,15 +10,15 @@ title: Lab 6 - Clustering
 
 ### Data
 
-This session uses the **"AirBnb listing for Inner London - MSOA level"** dataset. Go to the [Datasets](../datasets.html) tab to find out more information as well as instructions to download it.
+This session uses the **"John Snow's Cholera map""** dataset. Go to the [Datasets](../datasets.html) tab to find out more information as well as instructions to download it.
 
 ### Required before the practical
 
-Watch the section on spatial clustering of the SciPy'16 tutorial on Geographic Data Science with PySAL. 
+Watch the section on ESDA of the SciPy'16 tutorial on Geographic Data Science with PySAL. 
 
-> [[YouTube](https://youtu.be/TY4QWnnd4jY?t=2h30m) - Min 2:30:00 to 3:02:00] [[Online materials](http://darribas.org/gds_scipy16/ipynb_md/07_spatial_clustering.html)]
+> [[YouTube](https://youtu.be/TY4QWnnd4jY?t=1h25m40s) - Min 1:25:40 to 1:49:20] [[Online materials](http://darribas.org/gds_scipy16/ipynb_md/04_esda.html)]
 
 ### Additional materials
 
-* Although a bit more advanced, the documentation for [`scikit-learn`](http://scikit-learn.org), a world-class Python library for machine learning, is excellent and includes many examples that cover the entire functionality set of the library.
+* The ["Spatial Autocorrelation"](http://pysal.readthedocs.org/en/latest/users/tutorials/autocorrelation.html) in `PySAL`'s documentation is a good extension to the topics covered in this session. It illustrates other statistics beyond those covered in class, albeit it does so in a more advanced fashion. 
 

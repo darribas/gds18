@@ -1,5 +1,5 @@
 ---
-title: Lab 5 - ESDA
+title: Lab 5 - Spatial Weights
 ---
 
 ### Notebook
@@ -10,15 +10,15 @@ title: Lab 5 - ESDA
 
 ### Data
 
-This session uses the **"John Snow's Cholera map""** dataset. Go to the [Datasets](../datasets.html) tab to find out more information as well as instructions to download it.
+This session uses the **"Index of Multiple Deprivation""** dataset. Go to the [Datasets](../datasets.html) tab to find out more information as well as instructions to download it.
 
 ### Required before the practical
 
-Watch the section on ESDA of the SciPy'16 tutorial on Geographic Data Science with PySAL. 
+Watch the section on spatial weights of the SciPy'16 tutorial on Geographic Data Science with PySAL. 
 
-> [[YouTube](https://youtu.be/TY4QWnnd4jY?t=1h25m40s) - Min 1:25:40 to 1:49:20] [[Online materials](http://darribas.org/gds_scipy16/ipynb_md/04_esda.html)]
+> [[YouTube](https://youtu.be/TY4QWnnd4jY?t=1h2m55s) - Min 1:02:55 to 1:25:40] [[Online materials](http://darribas.org/gds_scipy16/ipynb_md/03_spatial_weights.html)]
 
 ### Additional materials
 
-* The ["Spatial Autocorrelation"](http://pysal.readthedocs.org/en/latest/users/tutorials/autocorrelation.html) in `PySAL`'s documentation is a good extension to the topics covered in this session. It illustrates other statistics beyond those covered in class, albeit it does so in a more advanced fashion. 
-
+* The ["User Guides"](http://pysal.readthedocs.org/en/latest/users/tutorials/index.html) in `PySAL`'s documentation are an excellent resource to better get to know the library. 
+* For this lab, the one about [Spatial Weights](http://pysal.readthedocs.org/en/latest/users/tutorials/weights.html) is particularly useful.

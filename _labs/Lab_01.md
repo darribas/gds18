@@ -1,5 +1,5 @@
 ---
-title: Lab 1 - Tidy Data
+title: Lab 1 - Tidy Data (I)
 ---
 
 ### Notebook
@@ -12,17 +12,9 @@ title: Lab 1 - Tidy Data
 
 ---
 
-#### Part I - Tidy Data
-
-- [ipynb](../content/labs/lab_01_i.ipynb)
-- [html](../content/labs/lab_01_i.html)
-- [pdf](../content/labs/lab_01_i.pdf)
-
-#### Part II - Advanced Tricks
-
-- [ipynb](../content/labs/lab_01_ii.ipynb)
-- [html](../content/labs/lab_01_ii.html)
-- [pdf](../content/labs/lab_01_ii.pdf)
+- [ipynb](../content/labs/lab_01.ipynb)
+- [html](../content/labs/lab_01.html)
+- [pdf](../content/labs/lab_01.pdf)
 
 ### Data
 
