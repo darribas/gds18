@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>lab_01_ii</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>lab_02</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11775,7 +11775,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Geographic-Data-Science---Lab-01,-Part-II">Geographic Data Science - Lab 01, Part II<a class="anchor-link" href="#Geographic-Data-Science---Lab-01,-Part-II">&#182;</a></h1><p><a href="http://darribas.org">Dani Arribas-Bel</a></p>
+<h1 id="Geographic-Data-Science---Lab-02">Geographic Data Science - Lab 02<a class="anchor-link" href="#Geographic-Data-Science---Lab-02">&#182;</a></h1><p><a href="http://darribas.org">Dani Arribas-Bel</a></p>
 <p>This notebook elaborates on the previous session and shows some more advanced tricks that will allow you to perform data cleaning and processing in cases where the original source data used are not made available ready for analysis (as we did in the previous session). In particular, we will show how you can transform data downloaded from the internet into the table you used to explore population patterns in Liverpool.</p>
 <p>Before anything, let us import the libraries we will need:</p>
 
@@ -11822,7 +11822,7 @@ div#notebook {
 <span class="c1"># If you have placed the data folder in the same directory as this notebook,</span>
 <span class="c1"># you would do:</span>
 <span class="c1"># path = &#39;Liverpool/&#39;</span>
-<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;../../../gds17_data/Liverpool/&#39;</span>
+<span class="n">path</span> <span class="o">=</span> <span class="s1">&#39;../../../gds18_data/Liverpool/&#39;</span>
 
 <span class="c1"># Check to see if the path is correct and works. If you have set it </span>
 <span class="c1"># correctly, you should obtain the following list</span>
@@ -11845,12 +11845,12 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;datasets_description.csv&#39;,
+<pre>[&#39;readme.txt&#39;,
  &#39;metadata.xml&#39;,
- &#39;readme.txt&#39;,
- &#39;shapefiles&#39;,
+ &#39;variables_description.csv&#39;,
+ &#39;datasets_description.csv&#39;,
  &#39;tables&#39;,
- &#39;variables_description.csv&#39;]</pre>
+ &#39;shapefiles&#39;]</pre>
 </div>
 
 </div>
@@ -11895,17 +11895,17 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -12168,17 +12168,17 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -12466,17 +12466,17 @@ div#notebook {
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -12770,17 +12770,17 @@ memory usage: 14.0+ KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -12890,12 +12890,12 @@ memory usage: 14.0+ KB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;datasets_description.csv&#39;,
+<pre>[&#39;readme.txt&#39;,
  &#39;metadata.xml&#39;,
- &#39;readme.txt&#39;,
- &#39;shapefiles&#39;,
+ &#39;variables_description.csv&#39;,
+ &#39;datasets_description.csv&#39;,
  &#39;tables&#39;,
- &#39;variables_description.csv&#39;]</pre>
+ &#39;shapefiles&#39;]</pre>
 </div>
 
 </div>
@@ -13026,17 +13026,17 @@ memory usage: 14.0+ KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13224,17 +13224,17 @@ memory usage: 14.0+ KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13375,17 +13375,17 @@ memory usage: 14.0+ KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13757,17 +13757,17 @@ memory usage: 14.0+ KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -13880,10 +13880,10 @@ memory usage: 14.0+ KB
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
-<p><a rel="repo" href="https://github.com/darribas/gds17"><img alt="@darribas/gds17" style="border-width:0" src="../../GitHub-Mark.png" /></a></p>
+<p><a rel="repo" href="https://github.com/darribas/gds18"><img alt="@darribas/gds18" style="border-width:0" src="../../GitHub-Mark.png" /></a></p>
 <p>This notebook, as well as the entire set of materials, code, and data included
-in this course are available as an open Github repository available at: <a href="https://github.com/darribas/gds17"><code>https://github.com/darribas/gds17</code></a></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'17 - Lab 1, part II&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+in this course are available as an open Github repository available at: <a href="https://github.com/darribas/gds18"><code>https://github.com/darribas/gds18</code></a></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18 - Lab 2&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
 </div>
 </div>
