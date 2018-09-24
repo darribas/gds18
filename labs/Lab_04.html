@@ -7,7 +7,7 @@
   <meta name="author" content="Dani Arribas-Bel">
   <meta name="description" content="An introduction to Geographic Data Science">
 
-  <title>GDS18 &mdash; Lab 4 - Spatial Weights</title>
+  <title>GDS18 &mdash; Lab 4 - Automated choropleths</title>
 
   <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/css/course-site-custom.css" rel="stylesheet">
@@ -92,19 +92,21 @@
               
               <li><a href="../labs/Lab_00.html">Lab 0 - Tools</a></li>
               
-              <li><a href="../labs/Lab_01.html">Lab 1 - Tidy Data</a></li>
+              <li><a href="../labs/Lab_01.html">Lab 1 - Tidy Data (I)</a></li>
               
-              <li><a href="../labs/Lab_02.html">Lab 2 - (Geo)Visualization</a></li>
+              <li><a href="../labs/Lab_02.html">Lab 2 - Tidy Data (II)</a></li>
               
-              <li><a href="../labs/Lab_03.html">Lab 3 - Automated choropleths</a></li>
+              <li><a href="../labs/Lab_03.html">Lab 3 - (Geo)Visualization</a></li>
               
-              <li><a href="../labs/Lab_04.html">Lab 4 - Spatial Weights</a></li>
+              <li><a href="../labs/Lab_04.html">Lab 4 - Automated choropleths</a></li>
               
-              <li><a href="../labs/Lab_05.html">Lab 5 - ESDA</a></li>
+              <li><a href="../labs/Lab_05.html">Lab 5 - Spatial Weights</a></li>
               
-              <li><a href="../labs/Lab_06.html">Lab 6 - Clustering</a></li>
+              <li><a href="../labs/Lab_06.html">Lab 6 - ESDA</a></li>
               
-              <li><a href="../labs/Lab_07.html">Lab 7 - Points</a></li>
+              <li><a href="../labs/Lab_08.html">Lab 8 - Clustering</a></li>
+              
+              <li><a href="../labs/Lab_09.html">Lab 9 - Points</a></li>
               
               
             </ul>
@@ -127,7 +129,7 @@
   <div class="container" id="body">
 
     
-    <h2>Lab 4 - Spatial Weights</h2>
+    <h2>Lab 4 - Automated choropleths</h2>
     
 
     <h3 id="notebook">Notebook</h3>
@@ -138,24 +140,24 @@
   <li><a href="../content/labs/lab_04.pdf">pdf</a></li>
 </ul>
 
-<h3 id="data">Data</h3>
-
-<p>This session uses the <strong>“Index of Multiple Deprivation”“</strong> dataset. Go to the <a href="../datasets.html">Datasets</a> tab to find out more information as well as instructions to download it.</p>
-
-<h3 id="required-before-the-practical">Required before the practical</h3>
-
-<p>Watch the section on spatial weights of the SciPy’16 tutorial on Geographic Data Science with PySAL.</p>
-
-<blockquote>
-  <p>[<a href="https://youtu.be/TY4QWnnd4jY?t=1h2m55s">YouTube</a> - Min 1:02:55 to 1:25:40] [<a href="http://darribas.org/gds_scipy16/ipynb_md/03_spatial_weights.html">Online materials</a>]</p>
-</blockquote>
-
-<h3 id="additional-materials">Additional materials</h3>
+<p>Extra materials:</p>
 
 <ul>
-  <li>The <a href="http://pysal.readthedocs.org/en/latest/users/tutorials/index.html">“User Guides”</a> in <code class="highlighter-rouge">PySAL</code>’s documentation are an excellent resource to better get to know the library.</li>
-  <li>For this lab, the one about <a href="http://pysal.readthedocs.org/en/latest/users/tutorials/weights.html">Spatial Weights</a> is particularly useful.</li>
+  <li><a href="../content/labs/lab_04_extras.ipynb">ipynb</a></li>
+  <li><a href="../content/labs/lab_04_extras.html">html</a></li>
+  <li><a href="../content/labs/lab_04_extras.pdf">pdf</a></li>
 </ul>
+
+<h3 id="data">Data</h3>
+
+<p>This session uses the <strong>“Index of Multiple Deprivation”“</strong> dataset as well as the Ordnance Survey <strong>(OS) Geodata Pack</strong>. Go to the <a href="../datasets.html">Datasets</a> tab to find out more information as well as instructions to download it.</p>
+
+<p>Additionally, you will need the raster file for the basemap of Liverpool. This has been assembled by <a href="http://darribas.org">Dani Arribas-Bel</a> from the <a href="https://www.ordnancesurvey.co.uk/business-and-government/products/vectormap-district.html">OS VectorMap District (Backdrop Raster)</a>, and it is licensed as OpenData. The file is available for download on the following link:</p>
+
+<blockquote>
+  <p><a href="http://darribas.org/gds18/content/labs/figs/lab02_GBOverview.tif">http://darribas.org/gds16/content/labs/figs/lab02_GBOverview.tif</a></p>
+</blockquote>
+
 
 
   </div>

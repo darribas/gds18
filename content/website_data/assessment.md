@@ -5,8 +5,9 @@
 The final mark for the course is composed of the following three components:
 
 * [Contribution to module's discussion forum](#forum) (5%)
-* [Assignment 1](#task_01) (40%)
-* [Assignment 2](#task_02) (55%)
+* [Assignment 1](#task_01) (25%)
+* [Assignment 2](#task_02) (25%)
+* [Assignment 3](#task_03) (50%)
 
 Assignments 1 and 2 are described below. Students should keep in mind the following information regarding the submission of assignments:
 

@@ -13,11 +13,10 @@
 
 ## Quiz
 
-* Can you think of a real-world context where data and statistics are being
+* Can you think of a **real-world** context where **data** and statistics are being
   used to make a difference?
-* Have you ever heard the term **"Big Data"**?
 * Have you ever heard the term **"Data Science"**?
-* Have you ever written a line of computer code?
+* Have you ever written a line of **computer code**?
 
 ## 
 
@@ -42,9 +41,9 @@ way!*
 
 ## Logistics - Website
 
-[http://darribas.org/gds17](http://darribas.org/gds17)
+[http://darribas.org/gds18](http://darribas.org/gds18)
 
-<iframe src="http://darribas.org/gds17" width=600 height=400 ></iframe>
+<iframe src="http://darribas.org/gds18" width=600 height=400 ></iframe>
 
 ## Logistics - Format
 
@@ -61,15 +60,15 @@ way!*
 <ul>
 <li class='fragment'> **Weeks 1-3**: "big picture" lectures + introduction to 
     computational tools (learning curve) </li>
-<li class='fragment'> **Weeks 4-8**: "meat" of the course (lots of concepts packed) </li>
-<li class='fragment'> **Weeks 9-11**: catch up + prepare an awesome Assignment II </li>
+<li class='fragment'> **Weeks 4-9**: "meat" of the course (lots of concepts packed) + Week 7 **break** </li>
+<li class='fragment'> **Weeks 10-11**: catch up + prepare an awesome Computational Esssay </li>
 </ul>
 
 ## Code
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/M_rfujuRHUU" frameborder="0" allowfullscreen></iframe>
 
-*"Even if you won't be a poet, you need to know how to write"*
+**Driving** Vs **automobile engineering**
 
 ## Python
 
@@ -113,13 +112,11 @@ solving** rather than acquiring specific programming tricks or stats wizardry
 
 ## Assignments
 
-- Mark (mostly) based on **two assignments**, due:
-
-     - Week 7 (40%), Week 12 (55%)
-     - Coursework
-     - **Equivalent** to 2,500: report (*notebook*) with **code**, **figures** (e.g. maps), and **text**
- 
-- Discussion board (5%)
+- In-lab <span class='hlg'>computer tests</span>: W.5 (25%) and W.10 (25%)
+- <span class='hlg'>Computational essay</span> (W.12, 50%)
+     - Equivalent to 2,500 word
+     - Report (*notebook*) with **code**, **figures** (e.g. maps), and **text**
+- <span class='hlg'>Discussion board</span> (5%)
 
 **NOTE**: recommendation letters only for great students (**>70**)
 
@@ -186,17 +183,6 @@ knowledge** *
 
 ## Data Science
 
-<div style="height: 600px;" markdown="1">
-<caption><small>
-[Source](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram):
-Drew Conway
-</small></caption>
-
-![](../content/lectures/figs/l01_Data_Science_VD.png)
-</div>
-
-## Data Science
-
 **Statistics** + ...
 
 </ul>
@@ -232,6 +218,6 @@ Some examples...
 ## {data-background=../content/lectures/figs/l01_jsnow.jpg data-background-size=contain}
 
 #
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
