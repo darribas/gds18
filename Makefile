@@ -35,7 +35,7 @@ la00:
 	#cd content/labs && jupyter nbconvert --to latex begin.ipynb --output begin.tex && texbuild begin.tex && rm begin.tex
 	# Tools
 	cd content/labs && jupyter nbconvert --to html lab_00.ipynb --output lab_00.html
-	cd content/labs && jupyter nbconvert --to latex lab_00.ipynb --output lab_00.tex && texbuild lab_00.tex && rm lab_00.tex
+	#cd content/labs && jupyter nbconvert --to latex lab_00.ipynb --output lab_00.tex && texbuild lab_00.tex && rm lab_00.tex
 la01:
 	cd content/labs && jupyter nbconvert --to html lab_01.ipynb --output lab_01.html
 	cd content/labs && jupyter nbconvert --to latex lab_01.ipynb --output lab_01.tex && texbuild lab_01.tex && rm lab_01.tex && rm -R lab_01_files/
