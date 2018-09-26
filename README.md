@@ -3,7 +3,7 @@
 | OS      | Status |
 | ------- | -----------------|
 | Linux & macOS   | [![Build Status](https://travis-ci.org/darribas/gds18.svg?branch=master)](https://travis-ci.org/darribas/gds18) |
-| Windows | [![Build status](https://ci.appveyor.com/api/projects/status/nlobj16coto8k0rv?svg=true)](https://ci.appveyor.com/project/darribas/gds18) |
+| Windows | [![Build status](https://ci.appveyor.com/api/projects/status/w73hb3ds37gxlidv?svg=true)](https://ci.appveyor.com/project/darribas/gds18) |
 
 * [Dani Arribas-Bel](http://darribas.org) ([@darribas](http://darribas.org))
 
