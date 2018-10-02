@@ -125,12 +125,6 @@ Motivations ([Shadbolt, 2010](http://eprints.soton.ac.uk/268787/)):
 * Public service improvement 
 * Creation of new industries and jobs
 
-## [Global Open Data Index'14](http://global.census.okfn.org/)
-
-<div style="height: 600px;" markdown="1">
-![](../content/lectures/figs/l02_okn_odi.png)
-</div>
-
 ## Example: [BikeShare Map](http://oobrien.com/bikesharemap/)
 
 <div style="height: 600px;" markdown="1">
@@ -197,7 +191,8 @@ datasets. For example:
 * Temporal aggregation(frequency): Decadal Vs. Real-time
 
 Some of this does not "play well" with techniques employed traditionally to
-analyze data in Geography. 
+analyze data in Geography  <span class='fragment'>--> *borrow* techniques from other disciplines,
+or even *create* new ones</span>
 
 ## (New) Methods
 
@@ -208,18 +203,6 @@ analyze data in Geography.
 <center>
 [[source](https://www.flickr.com/photos/epublicist/3546059144)]
 </center>
-
-## (New) Methods
-
-To be able to extract as much insight as possible from these new sources of
-data --> *borrow* techniques from other disciplines, or even *create* new ones
-
-Examples: 
-
-* Visualization
-* Machine learning 
-
-But also others like bayesian inference, network science...
 
 #
 ## New **+** Old
@@ -237,6 +220,6 @@ But also others like bayesian inference, network science...
 <span class='fragment'> --> 1 + 1 > 2 </span>
 
 #
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'15 - Lecture 1</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 2</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
