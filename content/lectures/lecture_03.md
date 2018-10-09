@@ -71,44 +71,51 @@ Maps <span class="fragment">  --> Data Maps (XVIIth.C.) <span class="fragment"> 
 * If well made, visualizations provide leads into the processes underlying the
   graphic.
 
-## Learning by seeing time...
+## Historical examples
 
-## Time series 
-
-[[Source](http://www.fisme.science.uu.nl/wiskrant/artikelen/hist_grafieken/begin/images/pyrometrie.gif)] XVIIIth. Cent. - *Pytometrie* by J. H Lambert 
-
-<CENTER>
-<img src="../content/lectures/figs/l03_pyrometrie.gif" alt=""
-style="width:450px;height:450px;"/>
-</CENTER>
-
-## Bar chart
-
-[[Source](https://upload.wikimedia.org/wikipedia/commons/3/3f/Playfair_Barchart.gif)] Playfair's bar chart in The Commercial and Political Atlas (1786)
-
-<CENTER>
+<TABLE>
+ <TR>
+ <TD class='fragment'>
+<center>
+ <img src="../content/lectures/figs/l03_pyrometrie.gif" alt=""
+style="width:150px;height:150px;"/>
+<small>
+[[Source](http://www.fisme.science.uu.nl/wiskrant/artikelen/hist_grafieken/begin/images/pyrometrie.gif)] XVIIIth. Cent. - *Pytometrie* by J. H Lambert  
+</small>
+</center>
+ </TD>
+ <TD class='fragment'>
+<center>
 <img src="../content/lectures/figs/l03_playfair.gif" alt=""
-style="width:450px;height:450px;"/>
-</CENTER>
-
-## Abstract line plot
-
-[[Source](https://hal.archives-ouvertes.fr/halshs-00663305/document)] Lambert - Evaporation rate against temperature, 1769
-
+style="width:150px;height:150px;"/>
+<small>
+[[Source](https://upload.wikimedia.org/wikipedia/commons/3/3f/Playfair_Barchart.gif)] Playfair's bar chart in The Commercial and Political Atlas (1786)
+</small>
+</center>
+</TD>
+</small>
+ </TR>
+ <TR>
+ <TD class='fragment'>
 <CENTER>
 <img src="../content/lectures/figs/l03_lambert_plot.png" alt=""
-style="width:450px;height:450px;"/>
+style="width:150px;height:150px;"/>
+<small>
+[[Source](https://hal.archives-ouvertes.fr/halshs-00663305/document)] Lambert - Evaporation rate against temperature, 1769
+</small>
 </CENTER>
-
-## Minard - Napoleon army map (XIXth. Cent.)
-
-[[Source](https://en.wikipedia.org/wiki/File:Minard.png)]
-*"It may well be the best statistical graphic ever drawn"* (E. R. Tufte)
-
-<CENTER>
+ </TD>
+ <TD class='fragment'>
+ <CENTER>
 <img src="../content/lectures/figs/l03_minard.png" alt=""
-style="width:650px;height:350px;"/>
+style="width:250px;height:100px;"/>
+<small>
+Minard - Napoleon army map (XIXth. Cent.)
+</small>
 </CENTER>
+</TD>
+ </TR>
+</TABLE>
 
 
 #
@@ -307,6 +314,6 @@ style="width:550px;height:550px;"/>
 * Its power **can be misused**, but there are methods to limit this risk.
 
 #
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 3</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
