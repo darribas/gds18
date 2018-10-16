@@ -74,25 +74,19 @@
 <section id="section-2" class="level2">
 <h2></h2>
 <h3>
-Data <strong>maps</strong>
+Mapping Data with Data maps
 </h3>
 <ul>
-<li>Abstraction from the purely geographical map</li>
-<li>Representing numerical values within a spatial context</li>
+<li><strong>Abstraction</strong> from the purely geographical map</li>
+<li>Representing <strong>numerical values</strong> within a <strong>spatial</strong> context</li>
+<li>A geographical approach to statistical visualization</li>
 </ul>
 <div class="fragment">
-<h3>
-Mapping <strong>data</strong>
-</h3>
+<p><code>Key components</code></p>
 <ul>
-<li>
-A geographical approach to statistical visualization
-</li>
-<li>
-The spread of data is considered in its geographical dimension
-</li>
+<li>“Container” geographies</li>
+<li>Choropleths: displaying data on maps (choropleths)</li>
 </ul>
-<p>Before we delve into different types of data maps...</p>
 </div>
 </section>
 </section>
@@ -145,8 +139,8 @@ style="width:300px;height:300px;"/>
 <h2>MAUP</h2>
 <p><strong>Scale</strong> and <strong>delineation mismatch</strong> between:</p>
 <ul>
-<li>Underlying process (e.g. individuals, firms, shops)</li>
-<li>Unit of measurement (e.g. neighborhoods, regions, etc.)</li>
+<li>Underlying process (e.g. individuals, firms, shops)</li>
+<li>Unit of measurement (e.g. neighborhoods, regions, etc.)</li>
 </ul>
 <p>In some cases, it can <strong>seriously mislead</strong> analysis on aggregated data (e.g. <a href="http://theconversation.com/how-zip-codes-nearly-masked-the-lead-problem-in-flint-65626">Flint, MI!!!</a>)</p>
 <p><span class="fragment">Always keep <strong>MAUP</strong> in mind when exploring aggregated data!!!</p>
@@ -164,15 +158,15 @@ style="width:300px;height:300px;"/>
 </center>
 <ul>
 <li>Counterpart of the histogram</li>
-<li><strong>Values</strong> are <strong>classified</strong> into specific <strong>colors</strong>: value --&gt; bin</li>
+<li><strong>Values</strong> are <strong>classified</strong> into specific <strong>colors</strong>: value –&gt; bin</li>
 <li><strong>Information loss</strong> as a trade off for <strong>simplicity</strong></li>
 </ul>
 </section>
 <section id="classification-choices" class="level2">
 <h2>Classification choices</h2>
 <ul>
-<li>Colors <span class="fragment"> --&gt; in alignment with the goal of the map</li>
-<li>Bins <span class="fragment"> --&gt; How many?</li>
+<li>Colors <span class="fragment"> –&gt; in alignment with the goal of the map</li>
+<li>Bins <span class="fragment"> –&gt; How many?</li>
 <li>Algorithm:</li>
 </ul>
 <ul class="fragment">
@@ -189,18 +183,9 @@ Qua/Quintiles (equal count)
 Fisher-Jenks
 </li>
 <li>
-...
+…
 </li>
 </ul>
-</section>
-<section id="beware-standarization" class="level2">
-<h2>Beware standarization!!!</h2>
-[<a href="http://imgs.xkcd.com/comics/heatmap.png">Source</a>]
-<div style="height: 500px;" markdown="1">
-<figure>
-<img src="../content/lectures/figs/l04_heatmap.png" />
-</figure>
-</div>
 </section>
 <section id="color-schemes" class="level2">
 <h2>Color schemes</h2>
@@ -218,21 +203,22 @@ style="width:300px;height:50px;vertical-align:middle;border:0px;" class="fragmen
 <h2></h2>
 <p>[<a href="http://colorbrewer2.org/">Source</a>]</p>
 </section>
+<section id="classification-algorithms" class="level2">
+<h2>Classification algorithms</h2>
+</section>
 <section id="unique-values" class="level2">
 <h2>Unique values</h2>
 <ul>
 <li>Categorical data</li>
 <li>No gradient (reflect it with the color scheme!!!)</li>
-<li>Examples: Religion, country of origin...</li>
+<li>Examples: Religion, country of origin…</li>
 </ul>
 </section>
 <section id="unique-values-1" class="level2">
 <h2>Unique values</h2>
 <center>
-<div style="height: 600px;" markdown="1">
-<figure>
-<img src="../content/lectures/figs/l04_unique_values.png" />
-</figure>
+<div style="height: 600px;" data-markdown="1">
+<p><img src="../content/lectures/figs/l04_unique_values.png" /></p>
 </div>
 </center>
 </section>
@@ -263,7 +249,7 @@ style="width:300px;height:50px;vertical-align:middle;border:0px;" class="fragmen
 <ul>
 <li>Fisher-Jenks</li>
 <li>Natural breaks</li>
-<li>Outlier maps: box maps, std. maps...</li>
+<li>Outlier maps: box maps, std. maps…</li>
 </ul>
 </section>
 <section id="tips" class="level2">
@@ -280,7 +266,7 @@ style="width:300px;height:50px;vertical-align:middle;border:0px;" class="fragmen
 <h1></h1>
 <section id="cartograms" class="level2">
 <h2>Cartograms</h2>
-<p><em>&quot;<strong>Data maps</strong> where the variable is encoded, not by a color gradient, but by <strong>distorting the shape/size</strong> of the geographical objects&quot;</em></p>
+<p><em>“<strong>Data maps</strong> where the variable is encoded, not by a color gradient, but by <strong>distorting the shape/size</strong> of the geographical objects”</em></p>
 <ul class="fragment">
 <li>
 Useful in cases where the natural size/shape induces to wrong interpretation, or obscures the intended representation.
@@ -319,10 +305,8 @@ Split a dataset in <em>buckets</em> by <em>conditioning</em> on additional varia
 <section id="conditional-maps-1" class="level2">
 <h2>Conditional maps</h2>
 <center>
-<div style="width: 600px;" markdown="1">
-<figure>
-<img src="../content/lectures/figs/l04_conditional_plot.png" />
-</figure>
+<div style="width: 600px;" data-markdown="1">
+<p><img src="../content/lectures/figs/l04_conditional_plot.png" /></p>
 </div>
 </center>
 </section>
@@ -335,18 +319,16 @@ Split a dataset in <em>buckets</em> by <em>conditioning</em> on additional varia
 <section id="space-time-mapping-1" class="level2">
 <h2>Space-Time mapping</h2>
 <ul>
-<li>Bringing time into a spatial 2D context is &quot;tricky&quot; (it's really 3D!)</li>
-<li>Traditionally <span class="fragment"> --&gt; sequence of time periods, 3D plots</li>
-<li>More recently <span class="fragment"> --&gt; animation and interactivity</li>
+<li>Bringing time into a spatial 2D context is “tricky” (it’s really 3D!)</li>
+<li>Traditionally <span class="fragment"> –&gt; sequence of time periods, 3D plots</li>
+<li>More recently <span class="fragment"> –&gt; animation and interactivity</li>
 </ul>
 </section>
 <section id="section-17" class="level2">
 <h2></h2>
 [<a href="http://www.svgopen.org/2005/papers/abstract_neumann_thematic_navigation_in_space_and_time/">Source</a>]
-<div style="height: 500px;" markdown="1">
-<figure>
-<img src="../content/lectures/figs/l04_space_time_cube.png" />
-</figure>
+<div style="height: 500px;" data-markdown="1">
+<p><img src="../content/lectures/figs/l04_space_time_cube.png" /></p>
 </div>
 <!--
 ## {data-background-iframe="http://cartodb.github.io/torque/examples/navy_leaflet.html"}
@@ -361,7 +343,7 @@ Split a dataset in <em>buckets</em> by <em>conditioning</em> on additional varia
 </section>
 <section id="section-19" class="level1">
 <h1></h1>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 4</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span data-xmlns:dct="http://purl.org/dc/terms/" data-property="dct:title">Geographic Data Science’18 - Lecture 4</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 </section>
 </div>
  
