@@ -20,6 +20,6 @@ This session uses the **"Index of Multiple Deprivation""** dataset as well as th
 
 Additionally, you will need the raster file for the basemap of Liverpool. This has been assembled by [Dani Arribas-Bel](http://darribas.org) from the [OS VectorMap District (Backdrop Raster)](https://www.ordnancesurvey.co.uk/business-and-government/products/vectormap-district.html), and it is licensed as OpenData. The file is available for download on the following link:
 
-> [http://darribas.org/gds16/content/labs/figs/lab02_GBOverview.tif](http://darribas.org/gds18/content/labs/figs/lab02_GBOverview.tif)
+> [http://darribas.org/gds17/content/labs/figs/lab04_liverpool.tif](http://darribas.org/gds17/content/labs/figs/lab04_liverpool.tif)
 
 
