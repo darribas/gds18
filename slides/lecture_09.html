@@ -8,7 +8,7 @@
  
 <meta name="description" content="Geographic Data Science - Lecture IX">    
  
-  <meta name="author" content="Causal Inference" />
+  <meta name="author" content="Points" />
  
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -44,7 +44,7 @@
  
 <section>
 <h1>Geographic Data Science - Lecture IX</h1>
-<h3>Causal Inference</h3>
+<h3>Points</h3>
 <p>
 <h4><a href="http://darribas.org">Dani Arribas-Bel</a></h4>
 </p>
@@ -56,215 +56,259 @@
 <section id="today" class="level2">
 <h2>Today</h2>
 <ul>
-<li>Correlation Vs Causation</li>
-<li>Causal inference</li>
-<li>Why/when causality matters</li>
-<li>Hurdles to causal inference &amp; strategies to overcome them</li>
+<li>The <em>point</em> of points</li>
+<li>Point patterns</li>
+<li>Visualization of point patterns</li>
+<li>Identifying clusters of points</li>
 </ul>
 </section>
 </section>
 <section id="section-1" class="level1">
 <h1></h1>
-<section id="correlation-vs-causation" class="level2">
-<h2>Correlation Vs Causation</h2>
+<section id="the-point-of-points" class="level2">
+<h2>The <em>point</em> of points</h2>
 </section>
-<section id="correlation-vs-causation-1" class="level2">
-<h2>Correlation Vs Causation</h2>
-<p>Two fundamental ways to look at the relationship between two (or more) variables:</p>
-<div class="fragment">
-<p><strong><code>Correlation</code></strong></p>
-<p>Two variables have <strong>co-movement</strong>. If we know the value of one, we know something about the value of the other one.</p>
-</div>
-<div class="fragment">
-<p><strong><code>Causation</code></strong></p>
-<p>There is a <strong>&quot;cause-effect&quot;</strong> link between the two and, as a result, they display co-movement.</p>
-</div>
+<section id="points-like-polygons" class="level2">
+<h2>Points like polygons</h2>
+<p>Points <em>can</em> represent <strong>&quot;fixed&quot; entities</strong></p>
+<p><span class='fragment'> In this case, points are <strong>qualitatively</strong> similar to <strong>polygons/lines</strong></p>
+<p><span class='fragment'> The <strong>goal</strong> here is, taking location fixed, to model other aspects of the data</p>
 </section>
-<section id="correlation-vs-causation-2" class="level2">
-<h2>Correlation Vs Causation</h2>
+<section id="points-like-polygons-1" class="level2">
+<h2>Points like polygons</h2>
+<p>Examples:</p>
 <ul>
-<li><p>Both are useful, but for different purposes</p></li>
-<li><p>Causation <em>implies</em> correlation but <strong>not</strong> the other way around</p></li>
-<li><p>It is vital to keep this distinction in mind for meaningful and credible analysis</p></li>
+<li>
+Cities (in most cases)
+</li>
+<li>
+Buildings
+</li>
+<li>
+Polygons represented as their centroid
+</li>
+<li>
+...
+</li>
 </ul>
 </section>
-<section id="examples" class="level2">
-<h2>Examples</h2>
-<p><em>Sign correlation? Causal link?</em></p>
-<p>Take a guess (2mins)...</p>
+<section id="when-points-are-not-polygons" class="level2">
+<h2>When points are not polygons</h2>
+<p>Point data are not only a different geometry than polygons or lines...</p>
+<p><span class="fragment"> ... Points can also represent a fundamentally different way to approach spatial analysis</p>
+</section>
+<section id="points-unlike-polygons" class="level2">
+<h2>Points unlike polygons</h2>
 <ul>
-<li>Temperature and ice-cream consumption <span class="fragment"> <span class="math inline">→</span> <strong>Positive</strong>. <strong>Positive</strong>.</li>
-<li>Non-commercial space launches &amp; Sociology PhDs awarded</li>
-<li>Crime &amp; policing</li>
-<li>IMD in an area Vs its neighbors (Liverpool)</li>
+<li class="fragment current-visible">
+Rather than exhausting the entire space, points can be <strong>events</strong> subject to <strong>occur anywhere</strong>
+</li>
+<li class="fragment current-visible">
+The <strong>location</strong> of the event is <strong>part</strong> of what we are trying to understand/<strong>model</strong>
+</li>
+<li class="fragment current-visible">
+The interest focuses on <strong>characterizing</strong> the <strong>pattern</strong> that the points follow <strong>over space</strong>
 </ul>
 </section>
-<section id="section-2" class="level2" data-background="../content/lectures/figs/l10_spurius.svg">
+<section id="a-few-examples..." class="level2">
+<h2>A few examples...</h2>
+</section>
+<section id="section-2" class="level2" data-background="../content/lectures/figs/l09_crime.png">
 <h2></h2>
-<p>[<a href="http://tylervigen.com/spurious-correlations">Source</a>]</p>
+<p>[<a href="http://www.crimemapping.com/map.aspx?aid=3db8cf99-a73b-46d2-b218-bd24cf491577">Source</a>]</p>
 </section>
-<section id="examples-1" class="level2">
-<h2>Examples</h2>
-<p><em>Positive or negative correlation? Causal link?</em></p>
-<p>Take a guess (2mins)...</p>
-<ul>
-<li>Temperature and ice-cream consumption <span class="math inline">→</span> <strong>Positive</strong>. <strong>Positive</strong>.</li>
-<li>Non-commercial space launches &amp; Sociology PhDs awarded <span class="math inline">→</span> <strong>Positive</strong>. <strong>None</strong>.</li>
-<li>Crime &amp; policing <span class="fragment"> <span class="math inline">→</span> <strong>Positive</strong>. <strong>Negative</strong>.</span></li>
-<li>IMD in an area Vs its neighbors (Liverpool)</li>
-</ul>
-</section>
-<section id="section-3" class="level2" data-background="../content/lectures/figs/l05_moranplot_std.png">
+<section id="section-3" class="level2" data-background="../content/lectures/figs/l09_trees.png">
 <h2></h2>
+<p>[<a href="http://jillhubley.com/project/nyctrees/">Source</a>]</p>
 </section>
-<section id="examples-2" class="level2">
-<h2>Examples</h2>
-<p><em>Positive or negative correlation? Causal link?</em></p>
-<p>Take a guess (2mins)...</p>
-<ul>
-<li>Temperature and ice-cream consumption <span class="math inline">→</span> <strong>Positive</strong>. <strong>Positive</strong>.</li>
-<li>Non-commercial space launches &amp; Sociology PhDs awarded <span class="math inline">→</span> <strong>Positive</strong>. <strong>None</strong>.</li>
-<li>Crime &amp; policing <span class="math inline">→</span> <strong>Positive</strong>. <strong>Negative</strong>.</li>
-<li>IMD in an area Vs its neighbors (Liverpool) <span class="math inline">→</span> <strong>Positive</strong>. <strong>?</strong></li>
-</ul>
+<section id="ufo-sightings-1933-" class="level2">
+<h2>UFO Sightings (1933-)</h2>
+<iframe width="100%" height="520" frameborder="0" src="https://lcpearso.cartodb.com/viz/e36e448a-da87-11e4-a327-0e018d66dc29/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen>
+</iframe>
+</section>
+<section id="geo-tagged-tweets" class="level2">
+<h2>Geo-tagged tweets</h2>
+<iframe width="100%" height="500px" frameBorder="0" src="https://api.tiles.mapbox.com/v4/enf.c3a2de35/page.html?access_token=pk.eyJ1IjoiZW5mIiwiYSI6IkNJek92bnMifQ.xn2_Uj9RkYTGRuCGg4DXZQ#12/53.4155/-2.9680">
+</iframe>
 </section>
 </section>
 <section id="section-4" class="level1">
 <h1></h1>
-<section id="causal-inference" class="level2">
-<h2>Causal Inference</h2>
+<section id="point-patterns" class="level2">
+<h2>Point patterns</h2>
+</section>
+<section id="point-patterns-1" class="level2">
+<h2>Point patterns</h2>
+<p>Distribution of <strong>points over</strong> a portion of <strong>space</strong></p>
+<p>Assumption is a point can happen anywhere on that space, but only happens in specific locations</p>
+<div class="fragment">
+<ul>
+<li><strong>Unmarked</strong>: locations only</li>
+<li><strong>Marked</strong>: values attached to each point</li>
+</ul>
+</div>
 </section>
 <section id="section-5" class="level2">
 <h2></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JA5s-Uh6q8s" frameborder="0" allowfullscreen>
-</iframe>
-<center>
-[<a href="https://www.youtube.com/watch?v=JA5s-Uh6q8s">Source</a>]
-</center>
+<p><strong><code>Point Pattern Analysis</code></strong></p>
+<p>Describe, characterize, and explain point patterns, focusing on their <strong>generating process</strong></p>
+<ul>
+<li><u>Visual exploration</u></li>
+<li><em>Clustering</em> properties and <u><em>clusters</em></u></li>
+<li>Statistical modeling of the underlying processes</li>
+</ul>
 </section>
 </section>
 <section id="section-6" class="level1">
 <h1></h1>
-<section id="whywhen-to-get-causal" class="level2">
-<h2><em>Why/When to get Causal?</em></h2>
+<section id="visualization-of-pps" class="level2">
+<h2>Visualization of PPs</h2>
 </section>
-<section id="why" class="level2">
-<h2>Why</h2>
+<section id="visualization-of-pps-1" class="level2">
+<h2>Visualization of PPs</h2>
+<p>Two routes (today):</p>
 <ul>
-<li>Most often, we are interested in understanding the <strong>processes</strong> that <em>generate</em> the world, not only in observing its outcomes</li>
-<li>Many of these processes are only <strong>indirectly observable</strong> through <strong>outcomes</strong></li>
-<li>The only way to link both is through <strong>causal channels</strong></li>
+<li><em>Aggregate</em> <span class='fragment'> <span class="math inline">↔</span> &quot;Histogram&quot;</li>
+<li><em>Smooth</em> <span class='fragment'> <span class="math inline">↔</span> KDE</li>
 </ul>
 </section>
-<section id="when" class="level2">
-<h2>When</h2>
-<p>Essentially when the <strong>core interest</strong> is to find out if <strong>something <em>causes</em> something else</strong></p>
+<section id="aggregation" class="level2">
+<h2>Aggregation</h2>
+</section>
+<section id="section-7" class="level2">
+<h2></h2>
+<center>
+<em>Points meet polygons</em>
+</center>
+<p><span class="fragment"> Use <strong>polygon</strong> boundaries and <strong>count</strong> points per area</p>
+<p><span class="fragment"> [Insert your skills for <strong>choropleth mapping</strong> here!!!]</p>
+<p><span class="fragment"> <strong>But</strong>, <span class="fragment"> the polygons need to <em>&quot;make sense&quot;</em> (their delineation needs to relate to the point generating process)</p>
+</section>
+<section id="section-8" class="level2">
+<h2></h2>
+<center>
+<img src="../content/lectures/figs/l09_liv_pts.png" alt=""
+style="width:400px;height:500px;"/> <span class="fragment"> <img src="../content/lectures/figs/l09_liv_cho.png" alt=""
+style="width:400px;height:500px;"/>
+</center>
+</section>
+<section id="hex-binning" class="level2">
+<h2>Hex-binning</h2>
+<p>If <strong>no</strong> polygon boundary seems like a <strong>good candidate</strong> for aggregation...</p>
+<p><span class='fragment'> ...draw a <strong>hexagonal</strong> (or squared) <strong>tesselation</strong>!!!</p>
+<div class="fragment">
+<p>Hexagons...</p>
 <ul>
-<li>Policy interventions</li>
-<li>Medical trials</li>
-<li>Business decisions (product/feature development...)</li>
-<li>Empirical (Social) Sciences</li>
-<li>...</li>
-</ul>
-</section>
-<section id="when-not-necessarily" class="level2">
-<h2>When Not (necessarily)</h2>
-<div class="fragment">
-<p><strong><code>Exploratory analysis</code></strong></p>
-<p>Distracting if not enough knowledge about the dataset</p>
-</div>
-<div class="fragment">
-<p><strong><code>Predictive settings</code></strong></p>
-<p><strong>Interest</strong> not in understanding the underlying mechanisms but want to obtain <strong>best possible estimates</strong> of a variable you do not have by combining others you do have <small style='vertical-align:middle;'> (e.g. Kriging) </small></p>
-</div>
-</section>
-</section>
-<section id="section-7" class="level1">
-<h1></h1>
-<section id="hurdles-to-causal-inference" class="level2">
-<h2>Hurdles to Causal Inference</h2>
-</section>
-<section id="hurdles-to-causal-inference-1" class="level2">
-<h2>Hurdles to causal inference</h2>
-<p>Causation <em>implies</em> Correlation</p>
-<p>Correlation <em>does <strong>not</strong> imply</em> Causation</p>
-<p><em>Why?</em></p>
-<div class="fragment">
-<ul>
-<li>Reverse causality</li>
-<li>Confounding factors/endogeneity</li>
+<li>Are <strong>regular</strong></li>
+<li><strong>Exhaust</strong> the space (Unlike circles)</li>
+<li>Have <strong>many sides</strong> (minimize boundary problems)</li>
 </ul>
 </div>
-</section>
-<section id="reverse-causality" class="level2">
-<h2>Reverse Causality</h2>
-<p>There <em>is</em> a causal link between the two variables but it either runs the oposite direction as we think, or runs in both</p>
-<div class="fragment">
-<p>E.g. Education and income</p>
-</div>
-</section>
-<section id="confounding-factors" class="level2">
-<h2>Confounding Factors</h2>
-<p>Two variables are correlated because they are <em>both</em> determined by other, unobserved, variables (factors) that <em>confound</em> the effect</p>
-<div class="fragment">
-<p>E.g. Ice cream and cold beverages consumption</p>
-</div>
-</section>
-</section>
-<section id="section-8" class="level1">
-<h1></h1>
-<section id="strategies" class="level2">
-<h2>Strategies</h2>
 </section>
 <section id="section-9" class="level2">
 <h2></h2>
-<p><em>Is there any way to overcome reverse causality and confounding factors to recover causal effects?</em></p>
-<p><span class='fragment'> The key is to get an <strong>&quot;<em>exogenous source of variation</em>&quot;</strong></p>
+<center>
+<img src="../content/lectures/figs/l09_liv_pts.png" alt=""
+style="width:300px;height:400px;"/> <span class="fragment"> <img src="../content/lectures/figs/l09_liv_hex_empty.png" alt=""
+style="width:300px;height:400px;"/> <span class="fragment"> <img src="../content/lectures/figs/l09_liv_hex_filled.png" alt=""
+style="width:300px;height:400px;"/>
+</center>
 </section>
-<section id="strategies-1" class="level2">
-<h2>Strategies</h2>
+<section id="but..." class="level2">
+<h2>But...</h2>
 <div class="fragment">
-<p><strong><code>Randomized Control Trials</code></strong></p>
-<p><small> <em>Treated</em> Vs <em>control</em> groups. Probability of treatment is independent of everything else </small></p>
+<p>(Arbitrary) aggregation may induce <strong>MAUP</strong> (see Lecture 4)</p>
 </div>
+<center class="fragment">
+<span class="math inline">+</span>
+</center>
 <div class="fragment">
-<p><strong><code>Quasi-natural experiments</code></strong></p>
-<p><small> Like a RCT, but that just <em>&quot;happen to occur <strong>naturally</strong>&quot;</em> (natural dissasters, exogenous law changes...) </small></p>
-</div>
-<div class="fragment">
-<p><strong><code>Econometric techniques</code></strong></p>
-<p><small> For the interested reader: space-time regression, instrumental variables, propensity score matching, differences-in-differences, regression discontinuity... </small></p>
-</div>
-</section>
-</section>
-<section id="section-10" class="level1">
-<h1></h1>
-<section id="correlation-or-causation" class="level2">
-<h2>Correlation <em>or</em> Causation?</h2>
-<div class="fragment">
-<p>Establishing <strong>causality is much harder</strong> than identifying correlation, <span class="fragment"> but sometimes it's needed to move forward!</p>
-</div>
-<div class="fragment">
-<p>Correlation <em>precludes</em> causation and, in some cases, it is all that is needed.</p>
-</div>
-<div class="fragment">
-<p>It is <strong>important</strong> to always draw <em>conclusions based on analysis</em>, know what the data can and cannot tell, and stay <strong>honest</strong>.</p>
+<p>Points usually represent events that affect only <strong>part</strong> of the population and hence are best considered as <strong>rates</strong> (see Lecture 4)</p>
 </div>
 </section>
-<section id="section-11" class="level2">
+<section id="kernel-density-estimation" class="level2">
+<h2>Kernel Density Estimation</h2>
+</section>
+<section id="kernel-density-estimation-1" class="level2">
+<h2>Kernel Density Estimation</h2>
+<p><em>Estimate the (<strong>continuous</strong>) observed <strong>distribution</strong> of a variable</em></p>
+<div class="fragment">
+<ul>
+<li>Probability of finding an observation at a given point</li>
+<li>&quot;Continuous histogram&quot;</li>
+<li>Solves (much of) the MAUP problem, but not the underlying population issue</li>
+</ul>
+</div>
+</section>
+<section id="section-10" class="level2" data-background="../content/lectures/figs/l09_kde.png" data-background-size="contain">
+<h2></h2>
+<p>[<a href="https://en.wikipedia.org/wiki/Kernel_density_estimation#/media/File:Comparison_of_1D_histogram_and_KDE.png">Source</a>]</p>
+</section>
+<section id="bivariate-spatial-kde" class="level2">
+<h2>Bivariate (spatial) KDE</h2>
+<p><em>Probability of finding observations at a given point in space</em></p>
+<ul>
+<li><strong>Bivariate</strong> version: distribution of <strong>pairs of values</strong></li>
+<li>In <strong>space</strong>: values are coordinates (XY), locations</li>
+<li>Continuous &quot;version&quot; of a choropleth</li>
+</ul>
+</section>
+<section id="section-11" class="level2" data-background="../content/lectures/figs/l09_kde2d.png">
+<h2></h2>
+</section>
+<section id="section-12" class="level2">
 <h2></h2>
 <center>
-<img src="../content/lectures/figs/l10_xkcd.png" alt=""
-style="width:800px;height:400px;"/>
-</center>
-<center>
-[<a href="https://xkcd.com/552/">Source</a>]
+<img src="../content/lectures/figs/l09_liv_pts.png" alt=""
+style="width:400px;height:500px;"/> <span class="fragment"> <img src="../content/lectures/figs/l09_liv_kde.png" alt=""
+style="width:400px;height:500px;"/>
 </center>
 </section>
 </section>
-<section id="section-12" class="level1">
+<section id="section-13" class="level1">
 <h1></h1>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 9</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<section id="finding-clusters-of-pps" class="level2">
+<h2>Finding clusters of PPs</h2>
+</section>
+<section id="section-14" class="level2">
+<h2></h2>
+<p><span class="fragment fade-out"> <strong>Cluster</strong> is a hard to define term </span></p>
+<CENTER>
+<span class="fragment"> <em>Concentrations/agglomerations of points over space, significantly more so than in the rest of the space considered</em> </span>
+</CENTER>
+<p><span class="fragment"> Huge literature spanning <strong>spatial analysis</strong>, <strong>statistics</strong> and <strong>computer science</strong>. Today, we'll look at... </span></p>
+</section>
+<section id="section-15" class="level2">
+<h2></h2>
+<p><code>D</code><span class="fragment">ensity</span></p>
+<p><code>B</code><span class="fragment">ased</span></p>
+<p><code>S</code><span class="fragment">patial</span></p>
+<p><code>C</code><span class="fragment">lustering of</span></p>
+<p><code>A</code><span class="fragment">pplications with</span></p>
+<p><code>N</code><span class="fragment">oise</span></p>
+</section>
+<section id="section-16" class="level2">
+<h2></h2>
+<iframe width="700" height="500" src="https://www.youtube.com/embed/5E097ZLE9Sg" frameborder="0" allowfullscreen>
+</iframe>
+</section>
+<section id="dbscan" class="level2">
+<h2><code>DBSCAN</code></h2>
+<p><small>(Additional)</small> <strong>Pros</strong>:</p>
+<ul>
+<li>Not necessarily spatial</li>
+<li>Very fast to run so <span class="math inline">→</span> scales relatively well <span class="math inline">→</span> applicable to large datasets</li>
+</ul>
+<p><small>(Additional)</small> <strong>Cons</strong>:</p>
+<ul>
+<li>Not based on any probabilistic model (no inference)</li>
+<li>Hard to learn about the underlying process</li>
+</ul>
+</section>
+</section>
+<section id="section-17" class="level1">
+<h1></h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 8</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 </section>
 </div>
  
