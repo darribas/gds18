@@ -1,5 +1,5 @@
 ---
-title: Week 11 - Geographic Data Science in Action
+title: Week 12 - Geographic Data Science in Action
 ---
 
 [TBA]
