@@ -125,6 +125,7 @@ x > 0 &\mbox{ if $i$ and $j$ are neighbors} \\
 <li>In the same &quot;place&quot; as us <span class="fragment"> <span class="math inline">→</span> <strong>Block</strong> weights</li>
 <li>...</li>
 </ul>
+<p><span class="fragment"> See <a href="http://www.amazon.com/Modern-Spatial-Econometrics-Practice-GeoDaSpace/dp/0986342106/ref=sr_1_1?ie=UTF8&amp;qid=1421531753&amp;sr=8-1&amp;keywords=anselin+spatial+econometrics">Anselin &amp; Rey (2014)</a> for an in-detail discussion and more types of <span class="math inline"><em>W</em></span>. </span></p>
 </section>
 <section id="contiguity-based-weights" class="level2">
 <h2>Contiguity-based weights</h2>
@@ -172,23 +173,13 @@ style="width:400px;height:400px;"/>
 <section id="section-9" class="level2" data-background="../content/lectures/figs/l05_block.png">
 <h2></h2>
 </section>
-<section id="other-types-of-weights" class="level2">
-<h2>Other types of weights</h2>
-<ul>
-<li>Combinations of the above</li>
-<li>Kernel</li>
-<li>Statistically-derived</li>
-<li>...</li>
-</ul>
-<p>See <a href="http://www.amazon.com/Modern-Spatial-Econometrics-Practice-GeoDaSpace/dp/0986342106/ref=sr_1_1?ie=UTF8&amp;qid=1421531753&amp;sr=8-1&amp;keywords=anselin+spatial+econometrics">Anselin &amp; Rey (2014)</a> for an in-detail discussion.</p>
-</section>
 <section id="how-much-of-a-neighbor" class="level2">
 <h2><em>How much of a neighbor?</em></h2>
 <p>No neighbors receive zero weight: <span class="math inline"><em>w</em><sub><em>i</em><em>j</em></sub> = 0</span></p>
 <p>Neighbors, it depends, <span class="math inline"><em>w</em><sub><em>i</em><em>j</em></sub></span> can be:</p>
 <ul>
-<li>One <span class="math inline"><em>w</em><sub><em>i</em><em>j</em></sub> = 1</span> <span class="math inline">→</span> <strong>Binary</strong></li>
-<li><p>Some proportion (<span class="math inline">0 &lt; <em>w</em><sub><em>i</em><em>j</em></sub> &lt; 1</span>, <strong>continuous</strong>) which can be a function of:</p>
+<li>One <span class="math inline"><em>w</em><sub><em>i</em><em>j</em></sub> = 1</span> <span class="math inline">→</span> <span class="hlg">Binary</span></li>
+<li><p>Some proportion (<span class="math inline">0 &lt; <em>w</em><sub><em>i</em><em>j</em></sub> &lt; 1</span>, <span class="hlg">continuous</span>) which can be a function of:</p>
 <ul>
 <li>Distance</li>
 <li>Strength of interaction (e.g. commuting flows, trade, etc.)</li>
@@ -226,7 +217,7 @@ style="width:400px;height:500px;"/>
 \bar{w_{ij}} = \dfrac{w_{ij}}{w_{i\cdotp}}
 </script>
 </p>
-<p>where <span class="math inline"><em>w</em><sub><em>i</em>·</sub></span> is the sum of a row.</p>
+<p>where <span class="math inline">$w_{i\cdotp}$</span> is the sum of a row.</p>
 </section>
 </section>
 <section id="section-11" class="level1">
@@ -263,28 +254,6 @@ style="width:400px;height:500px;"/>
 </section>
 <section id="section-14" class="level1">
 <h1></h1>
-<section id="moran-plot" class="level2">
-<h2>Moran Plot</h2>
-</section>
-<section id="moran-plot-1" class="level2">
-<h2>Moran Plot</h2>
-<ul>
-<li>Graphical device that displays <strong>a variable</strong> on the horizontal axis against <strong>its spatial lag</strong> on the vertical one</li>
-<li>Usually, variables are standardized (<span class="math inline">$\dfrac{y - mean(y)}{std(y)}$</span>), which divides the space into <strong>quadrants</strong></li>
-<li>Tool to start exploring <strong>spatial autocorrelation</strong></li>
-</ul>
-</section>
-<section id="moran-plot-2" class="level2">
-<h2>Moran Plot</h2>
-<center>
-<img src="../content/lectures/figs/l05_moranplot.png" alt=""
-style="width:400px;height:400px;"/> <span class="fragment"> <img src="../content/lectures/figs/l05_moranplot_std.png" alt=""
-style="width:400px;height:400px;"/>
-</center>
-</section>
-</section>
-<section id="section-15" class="level1">
-<h1></h1>
 <section id="recapitulation" class="level2">
 <h2>Recapitulation</h2>
 <ul>
@@ -294,9 +263,9 @@ style="width:400px;height:400px;"/>
 </ul>
 </section>
 </section>
-<section id="section-16" class="level1">
+<section id="section-15" class="level1">
 <h1></h1>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 </section>
 </div>
  
