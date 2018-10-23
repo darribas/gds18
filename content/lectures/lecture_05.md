@@ -73,6 +73,10 @@ A neighbor is "somebody" who is:
   **Block** weights
 * ...
 
+<span class='fragment'>
+See [Anselin & Rey (2014)](http://www.amazon.com/Modern-Spatial-Econometrics-Practice-GeoDaSpace/dp/0986342106/ref=sr_1_1?ie=UTF8&qid=1421531753&sr=8-1&keywords=anselin+spatial+econometrics) for an in-detail discussion and more types of $W$.
+</span>
+
 ## Contiguity-based weights
 
 **Sharing boundaries** to any extent
@@ -115,23 +119,14 @@ For example:
 
 ## {data-background=../content/lectures/figs/l05_block.png}
 
-## Other types of weights
-
-* Combinations of the above
-* Kernel
-* Statistically-derived
-* ...
-
-See [Anselin & Rey (2014)](http://www.amazon.com/Modern-Spatial-Econometrics-Practice-GeoDaSpace/dp/0986342106/ref=sr_1_1?ie=UTF8&qid=1421531753&sr=8-1&keywords=anselin+spatial+econometrics) for an in-detail discussion.
-
 ## *How much of a neighbor?*
 
 No neighbors receive zero weight: $w_{ij} = 0$
 
 Neighbors, it depends, $w_{ij}$ can be:
 
-* One $w_{ij} = 1$ $\rightarrow$ **Binary**
-* Some proportion ($0 < w_{ij} < 1$, **continuous**) which can be a function of:
+* One $w_{ij} = 1$ $\rightarrow$ <span class='hlg'>Binary</span>
+* Some proportion ($0 < w_{ij} < 1$, <span class='hlg'>continuous</span>) which can be a function of:
 
     * Distance
     * Strength of interaction (e.g. commuting flows, trade, etc.)
@@ -202,27 +197,6 @@ $$y_{sl-i} = \displaystyle \sum_j w_{ij} y_j$$
     - LISAs
     - Spatial models (lag, error...)
 
-
-#
-## Moran Plot
-
-## Moran Plot
-
-* Graphical device that displays **a variable** on the horizontal axis against **its spatial lag** on the vertical one
-* Usually, variables are standardized ($\dfrac{y - mean(y)}{std(y)}$), which
-  divides the space into **quadrants**
-* Tool to start exploring **spatial autocorrelation**
-
-## Moran Plot
-
-<center>
-<img src="../content/lectures/figs/l05_moranplot.png" alt=""
-style="width:400px;height:400px;"/>
-<span class="fragment"> 
-<img src="../content/lectures/figs/l05_moranplot_std.png" alt=""
-style="width:400px;height:400px;"/>
-</center>
-
 #
 ## Recapitulation
 
@@ -232,6 +206,6 @@ style="width:400px;height:400px;"/>
   other things!
 
 #
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
