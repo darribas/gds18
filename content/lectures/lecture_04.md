@@ -16,19 +16,18 @@
 
 #
 ##
-<h3>Data **maps**</h3>
+<h3>Mapping Data with Data maps</h3>
 
-* Abstraction from the purely geographical map
-* Representing numerical values within a spatial context
+* **Abstraction** from the purely geographical map
+* Representing **numerical values** within a **spatial** context
+* A geographical approach to statistical visualization
 
-<div class="fragment">
-<h3>Mapping **data**</h3>
-<ul>
-<li> A geographical approach to statistical visualization </li>
-<li> The spread of data is considered in its geographical dimension </li>
-</ul>
+<div class='fragment'>
+`Key components`
 
-Before we delve into different types of data maps...
+* "Container" geographies
+* Choropleths: displaying data on maps (choropleths)
+
 </div>
 
 #
@@ -126,13 +125,6 @@ gradient of some sort*
  <li> ... </li>
 </ul>
 
-## Beware standarization!!!
-
-[[Source](http://imgs.xkcd.com/comics/heatmap.png)]
-<div style="height: 500px;" markdown="1">
-![](../content/lectures/figs/l04_heatmap.png)
-</div>
-
 ## Color schemes
 
 Align with your purpose
@@ -147,6 +139,8 @@ style="width:300px;height:50px;vertical-align:middle;border:0px;" class="fragmen
 ## {data-background=../content/lectures/figs/l04_colorbrewer.png data-background-size=contain}
 
 [[Source](http://colorbrewer2.org/)]
+
+## Classification algorithms
 
 ## Unique values
 
@@ -270,6 +264,6 @@ create a map for each *bucket*
 [[Source](https://cartodb.com/case-studies/la-metro-movement/)]
 
 #
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 4</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 4</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 

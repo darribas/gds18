@@ -24,7 +24,10 @@ install:
   - activate gds
 
 test_script:
-  - jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=120 content/infrastructure/check_gds_stack.ipynb
+  - python -c "import os; print(os.listdir('.'))"
+  - python -c "import os; print(os.listdir('./content/'))"
+  - python -c "import os; print(os.listdir('./content/infrastructure'))"
+  - "jupyter nbconvert --to markdown --execute --ExecutePreprocessor.timeout=120 ./content/infrastructure/check_gds_stack.ipynb"
  #- cd content/labs
  #- jupyter nbconvert --execute --ExecutePreprocessor.timeout=120 *.ipynb
 
