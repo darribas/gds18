@@ -10,7 +10,7 @@ title: Lab 6 - ESDA
 
 ### Data
 
-This session uses the **"John Snow's Cholera map""** dataset. Go to the [Datasets](../datasets.html) tab to find out more information as well as instructions to download it.
+This session uses the **Brexit** dataset. Go to the [Datasets](../datasets.html) tab to find out more information as well as instructions to download it.
 
 ### Required before the practical
 

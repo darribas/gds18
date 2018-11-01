@@ -15,7 +15,7 @@ layout: default
 {% capture osgeo %}{% include_relative content/datasets/os_geodatapack.md %}{% endcapture %}
 {{ osgeo | markdownify }}
 
-{% capture js %}{% include_relative content/datasets/jsnow.md %}{% endcapture %}
+{% capture js %}{% include_relative content/datasets/brexit.md %}{% endcapture %}
 {{ js | markdownify }}
 
 {% capture abb %}{% include_relative content/datasets/airbnb.md %}{% endcapture %}
