@@ -13,6 +13,8 @@ title: Week 8 - Clustering
 
 ### Related readings
 
+* Chapters 1 and 2 in {% cite webber2018predictive %} provides a fascinating
+  account of the origins of Geodemographic classifications.
 * Chapter 7 in {% cite brunsdon2015geocomputation %}: *Geodemographic Analysis*, by Alexandros Alexiou and Alex Singleton.
 * {% cite duque2007supervised %} is an excellent review of regionalization algorthims, but it is an advanced read.
 

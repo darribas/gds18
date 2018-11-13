@@ -49,15 +49,21 @@ Albert Einstein
 ## Geodemographic analysis
 ## Geodemographic analysis
 
-* Technique developed in 1970’s attributed to Richard Webber
+<table>
+<col width="70%">
+<col width="30%">
+<tr>
+<td style="vertical-align:top">
+
+* 1970’s, Richard Webber
 * **Identify similar neighborhoods** $\rightarrow$ Target urban 
   deprivation funding
-* Originated in the **Public** Sector (policy) and spread to the
+* **Public** Sector (policy) $\rightarrow$
   **Private** sector (marketing and business intelligence)
-
-## {data-background=../content/lectures/figs/l08_la.jpg data-transition=none}
-
-[Source](http://gizmodo.com/uncovering-the-early-history-of-big-data-in-1974-los-an-1712551686)
+</td>
+<td><img src="../content/lectures/figs/l08_predictive_postcode.jpg"
+alt="Predictive Postcode"/></td>
+</table>
 
 ## {data-background=../content/lectures/figs/l08_oac.png data-transition=none}
 
@@ -100,16 +106,9 @@ and **dissimilar between** groups, based on a series of **attributes**
 style="width:750px;height:450px;"/>
 </center>
 
-## K-means <small>[[Source](http://simplystatistics.org/2014/02/18/k-means-clustering-in-a-gif/)]</small>
+## K-means <small>[[Source](https://youtu.be/hDmNF9JG3lo)]</small>
 
-<iframe width="750" height="450" src="https://www.youtube.com/embed/xnWFIgr34Lk" frameborder="0" allowfullscreen></iframe>
-
-## K-means <small>[[Source](http://simplystatistics.org/2014/02/18/k-means-clustering-in-a-gif/)]</small>
-
-<center>
-<img src="../content/lectures/figs/l08_kmeans.gif" alt="K-means"
-style="width:650px;height:550px;"/>
-</center>
+<iframe width="750" height="450" src="https://www.youtube.com/embed/hDmNF9JG3lo" frameborder="0" allowfullscreen></iframe>
 
 ## More clustering...
 
@@ -117,7 +116,7 @@ style="width:650px;height:550px;"/>
 * Agglomerative clustering
 * Spectral clustering
 * Neural networks (e.g. Self-Organizing Maps)
-* DBScan
+* DBSCAN
 * ...
 
 Different properties, different best usecases
@@ -189,6 +188,13 @@ excellent, though advanced, overview
 #
 ## Examples
 
+## Non-spatial clustering
+
+## {data-background=../content/lectures/figs/l08_spotify.png data-transition=none data-background-size=contain}
+## {data-background=../content/lectures/figs/l08_ca.png data-transition=none data-background-size=contain}
+
+## Regionalisation
+
 ## Census geographies {data-transition=none}
 
 <center>
@@ -213,6 +219,6 @@ style="width:800px;height:350px;"/>
 
 
 #
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'17 - Lecture 7</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 8</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
