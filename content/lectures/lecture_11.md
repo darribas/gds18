@@ -1,13 +1,6 @@
-% Geographic Data Science - Lecture X
+% Geographic Data Science - Lecture XI
 % Causal Inference
 %[Dani Arribas-Bel](http://darribas.org)
-
-#
-## Before Today
-
-<CENTER>
-For next week: **send your questions!!!**
-</CENTER>
 
 ## Today
 
