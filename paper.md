@@ -29,8 +29,8 @@ Liverpool.
 
 # Statement of need
 
-This module is needed because, although the content is relevant, the
-currently available set of options to teach them leaves clear gaps. 
+Although the content presented is relevant, the
+currently available set of options to teach it leaves clear gaps. 
 Data Science [@donoho201750] has become one of the most demanded skills thanks to an
 explosion in the availability of data [@kitchin2014data]. Most of these new sources are, 
 directly or indirecly, geographic in that they can be related to a particular
@@ -44,14 +44,14 @@ graphical interfaces and "point-and-click" software packages. This approach,
 although valid, limits the flexiblity with which the analyst can effectively
 move from data to insights, and is more difficult to connect with and benefit
 from modern advances in both data tools and workflows.
-The computational module presented in this paper acts as a pedagogical bridge
+This paper presents a pedagogical bridge
 between the "spatially unaware" set of practices emerging from Data Science,
 and more traditional resources designed to teach spatial analysis within a
 Geographic Information Systems (GIS) environment.
 
 # Learning objectives
 
-This module has been designed so, upon completion, students are able to:
+Upon completion, students are able to:
 
 * Demonstrate advanced GDS concepts and be able to use the tools
   programmatically to import, manipulate and analyse spatial data stored in
@@ -105,7 +105,7 @@ Geographic Data Science and Python programming.
  
 # Instructional design
 
-The computational learning module in this paper is structured in ten Jupyter
+There are ten Jupyter
 notebooks, each covering materials that would usually be presented to
 the student at a rate of one per week. Since the course expects no previous
 knowledge on the core theoretical concepts, students first attend a 1h. 
@@ -153,7 +153,7 @@ of contexts, with different goals and for different audiences. Most of these
 experiences fall under the following two scenarios:
 
 * **Semester-long course**: for four consecutive years (2015, 2016, 2017, and
-  2018), the materials in this module have formed the
+  2018), these materials have formed the
   computational backbone of the "Geographic Data Science" course taught at the
   University of Liverpool. The course is offered to Year 3 undergraduate
   students in Geography and Planning, and to MSc students across campus. Every
@@ -164,7 +164,7 @@ experiences fall under the following two scenarios:
   for these shorter events range from social scientists with experience in
   programming but not in geographic analysis, to practitioners with experience
   in GIS but not in programming. In all these cases, one or more of the
-  notebooks in the module have formed the basis of the materials used to
+  notebooks have formed the basis of the materials used to
   deliver computer sessions. Modifications relate mostly to
   adjusting the length to fit into the required time, or swaping the data used
   to provide more relevant examples.
