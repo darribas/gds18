@@ -152,8 +152,11 @@ delivered. In this time, the materials have been repurposed for a multiplicity
 of contexts, with different goals and for different audiences. Most of these
 experiences fall under the following two scenarios:
 
-* **Semester-long course**: for four consecutive years (2015, 2016, 2017, and
-  2018), these materials have formed the
+* **Semester-long course**: for four consecutive years 
+  ([2015](http://darribas.org/gds15/), 
+  [2016](http://darribas.org/gds16/), 
+  [2017](http://darribas.org/gds17/), and
+  [2018](http://darribas.org/gds18/)), these materials have formed the
   computational backbone of the "Geographic Data Science" course taught at the
   University of Liverpool. The course is offered to Year 3 undergraduate
   students in Geography and Planning, and to MSc students across campus. Every
