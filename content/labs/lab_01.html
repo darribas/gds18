@@ -13046,7 +13046,7 @@ dtype: int64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Deleting variables is also trivial:</li>
+<li>Permanently deleting variables is also trivial:</li>
 </ul>
 
 </div>
@@ -14572,7 +14572,7 @@ variables and types.</em></p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note we use <code>drop</code> to exclude "Total", but we could also use a list with the names of all the columns to keep.</p>
+<p>Note we use <code>drop</code> to exclude "Total", but we could also use a list with the names of all the columns to keep. Additionally, notice how, in this case, the use of <code>drop</code> (which leaves <code>db</code> untouched) is preferred to that of <code>del</code> (which permanently removes the column from <code>db</code>).</p>
 <p>At this point, the table <code>db_totals</code> is tidy: every row is an observation, every table is a variable, and there is only one observational unit in the table.</p>
 <p>The other table (<code>db_subgroups</code>), however, is not entirely tidied up yet: there is only one observational unit in the table, true; but every row is not an observation, and there are variable values as the names of columns (in other words, every column is not a variable). To obtain a fully tidy version of the table, we need to re-arrange it in a way that every row is a population subgroup in an area, and there are three variables: <code>GeographyCode</code>, population subgroup, and population count (or frequency).</p>
 <p>Because this is actually a fairly common pattern, there is a direct way to solve it in <code>pandas</code>:</p>
