@@ -55,16 +55,16 @@ There will be no lecture or lab this week
 
 -----
 
-##### Week 10: (Spatial) causal inference
+##### Week 10
 
-* Lecture: [Spatial causal inference](notes/Class_10.html).
+* Lecture: [Assignment preparation](notes/Class_10.html).
 * Tutorial: 
     - [**TEST 2**](assignments.html#task_02) (1h): Friday Nov. 30th
     - Assignment Clinic
 
-##### Week 11
+##### Week 11: (Spatial) causal inference
 
-* Lecture: [Assignment preparation](notes/Class_11.html).
+* Lecture: [Spatial causal inference](notes/Class_11.html).
 * Tutorial: Assignment Clinic.
 
 ##### Week 12: Geographic Data Science in Action
