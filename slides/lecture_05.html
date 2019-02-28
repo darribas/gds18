@@ -81,8 +81,8 @@
 <section id="section-3" class="level2">
 <h2></h2>
 <ul>
-<li><strong>(Geo)Visualization</strong>: translating numbers into a (visual) language that the human brain <em>&quot;speaks better&quot;</em></li>
-<li><strong>Spatial Weights Matrices</strong>: translating geography into a (numerical) language that a computer <em>&quot;speaks better&quot;</em>.</li>
+<li><strong>(Geo)Visualization</strong>: translating numbers into a (visual) language that the human brain <em>“speaks better”</em></li>
+<li><strong>Spatial Weights Matrices</strong>: translating geography into a (numerical) language that a computer <em>“speaks better”</em>.</li>
 </ul>
 </section>
 <section id="section-4" class="level2">
@@ -114,16 +114,16 @@ x > 0 &\mbox{ if $i$ and $j$ are neighbors} \\
 </script>
 <span class="math inline"><em>w</em><sub><em>i</em><em>i</em></sub> = 0</span> by convention
 </p>
-<p><span class="fragment"> <em>...What is a <strong>neighbor</strong>???</em></p>
+<p><span class="fragment"> <em>…What is a <strong>neighbor</strong>???</em></p>
 </section>
 <section id="types-of-w" class="level2">
 <h2>Types of <span class="math inline"><em>W</em></span></h2>
-<p>A neighbor is &quot;somebody&quot; who is:</p>
+<p>A neighbor is “somebody” who is:</p>
 <ul>
 <li>Next door <span class="fragment"> <span class="math inline">→</span> <strong>Contiguity</strong>-based <span class="math inline"><em>W</em></span>s</li>
 <li>Close <span class="fragment"> <span class="math inline">→</span> <strong>Distance</strong>-based <span class="math inline"><em>W</em></span>s</li>
-<li>In the same &quot;place&quot; as us <span class="fragment"> <span class="math inline">→</span> <strong>Block</strong> weights</li>
-<li>...</li>
+<li>In the same “place” as us <span class="fragment"> <span class="math inline">→</span> <strong>Block</strong> weights</li>
+<li>…</li>
 </ul>
 <p><span class="fragment"> See <a href="http://www.amazon.com/Modern-Spatial-Econometrics-Practice-GeoDaSpace/dp/0986342106/ref=sr_1_1?ie=UTF8&amp;qid=1421531753&amp;sr=8-1&amp;keywords=anselin+spatial+econometrics">Anselin &amp; Rey (2014)</a> for an in-detail discussion and more types of <span class="math inline"><em>W</em></span>. </span></p>
 </section>
@@ -133,7 +133,7 @@ x > 0 &\mbox{ if $i$ and $j$ are neighbors} \\
 <ul>
 <li>Rook</li>
 <li>Queen</li>
-<li>...</li>
+<li>…</li>
 </ul>
 </section>
 <section id="section-6" class="level2" data-background="../content/lectures/figs/l05_queen.png">
@@ -145,7 +145,7 @@ x > 0 &\mbox{ if $i$ and $j$ are neighbors} \\
 <ul>
 <li>Inverse distance (threshold)</li>
 <li>KNN (fixed number of neighbors)</li>
-<li>...</li>
+<li>…</li>
 </ul>
 </section>
 <section id="section-7" class="level2" data-background="../content/lectures/figs/l05_dist.png">
@@ -167,7 +167,7 @@ style="width:400px;height:400px;"/>
 <li>LSOAs into MSOAs</li>
 <li>Post-codes within city boundaries</li>
 <li>Counties within states</li>
-<li>...</li>
+<li>…</li>
 </ul>
 </section>
 <section id="section-9" class="level2" data-background="../content/lectures/figs/l05_block.png">
@@ -182,8 +182,8 @@ style="width:400px;height:400px;"/>
 <li><p>Some proportion (<span class="math inline">0 &lt; <em>w</em><sub><em>i</em><em>j</em></sub> &lt; 1</span>, <span class="hlg">continuous</span>) which can be a function of:</p>
 <ul>
 <li>Distance</li>
-<li>Strength of interaction (e.g. commuting flows, trade, etc.)</li>
-<li>...</li>
+<li>Strength of interaction (e.g. commuting flows, trade, etc.)</li>
+<li>…</li>
 </ul></li>
 </ul>
 </section>
@@ -192,7 +192,7 @@ style="width:400px;height:400px;"/>
 <p>Should be based on and reflect the <strong>underlying channels of interaction</strong> for the question at hand.</p>
 <p>Examples:</p>
 <ul>
-<li>Processes propagated by inmediate contact (e.g. disease contagion) <span class="math inline">→</span> Contiguity weights</li>
+<li>Processes propagated by inmediate contact (e.g. disease contagion) <span class="math inline">→</span> Contiguity weights</li>
 <li>Accessibility <span class="math inline">→</span> Distance weights</li>
 <li>Effects of county differences in laws <span class="math inline">→</span> Block weights</li>
 </ul>
@@ -210,14 +210,14 @@ style="width:400px;height:500px;"/>
 </section>
 <section id="standardization" class="level2">
 <h2>Standardization</h2>
-<p>In some applications (e.g. spatial autocorrelation) it is common to <em>standardize</em> <span class="math inline"><em>W</em></span></p>
+<p>In some applications (e.g. spatial autocorrelation) it is common to <em>standardize</em> <span class="math inline"><em>W</em></span></p>
 <p>The most widely used standardization is <strong>row-based</strong>: divide every element by the sum of the row:</p>
 <p>
 <script type="math/tex; mode=display">
 \bar{w_{ij}} = \dfrac{w_{ij}}{w_{i\cdotp}}
 </script>
 </p>
-<p>where <span class="math inline">$w_{i\cdotp}$</span> is the sum of a row.</p>
+<p>where <span class="math inline"><em>w</em><sub><em>i</em>·</sub></span> is the sum of a row.</p>
 </section>
 </section>
 <section id="section-11" class="level1">
@@ -245,9 +245,9 @@ style="width:400px;height:500px;"/>
 <li>Common way to introduce space formally in a statistical framework</li>
 <li><p>Heavily used in both ESDA and spatial regression to delineate neighborhoods. Examples:</p>
 <ul>
-<li>Moran's I</li>
+<li>Moran’s I</li>
 <li>LISAs</li>
-<li>Spatial models (lag, error...)</li>
+<li>Spatial models (lag, error…)</li>
 </ul></li>
 </ul>
 </section>
@@ -265,7 +265,7 @@ style="width:400px;height:500px;"/>
 </section>
 <section id="section-15" class="level1">
 <h1></h1>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18 - Lecture 5</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<pre><code>&lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;&lt;img alt=&quot;Creative Commons License&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-sa/4.0/88x31.png&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span xmlns:dct=&quot;http://purl.org/dc/terms/&quot; property=&quot;dct:title&quot;&gt;Geographic Data Science&#39;18&lt;/span&gt; by &lt;a xmlns:cc=&quot;http://creativecommons.org/ns#&quot; href=&quot;http://darribas.org&quot; property=&quot;cc:attributionName&quot; rel=&quot;cc:attributionURL&quot;&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a &lt;a rel=&quot;license&quot; href=&quot;http://creativecommons.org/licenses/by-sa/4.0/&quot;&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.</code></pre>
 </section>
 </div>
  
