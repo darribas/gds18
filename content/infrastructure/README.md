@@ -26,9 +26,7 @@ The easiest way to install locally and natively the software stack required is t
 
 Once you have a fully working conda installation in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on. 
 
-#### macOS/Linux
-
-Open up a terminal ("Applications --> Utilities --> Terminal" in macOS and  "ctr+alt+T" in Linux) and run the following commands:
+Open up a terminal ("Anaconda Command Prompt" in Windows, "Applications --> Utilities --> Terminal" in macOS and  "ctr+alt+T" in Linux) and run the following commands:
 
 * Navigate to the folder where this file is (e.g. Downloads):
 
@@ -45,46 +43,15 @@ Open up a terminal ("Applications --> Utilities --> Terminal" in macOS and  "ctr
 * Once this has run, you should be able to activate the environment:
 
     ```
-    source activate gds
+    conda activate gds
     ```
-
-#### Windows
-
-Open up the Anaconda Command Prompt (search for it on the Startup Menu) and run the following commands:
-
-* Navigate to the folder where this file is (e.g. Downloads):
-
-    ```
-    cd /path/to/folder/
-    ```
-
-* Execute the following command:
-
-    ```
-    conda-env create -f install_gds_stack.yml
-    ```
-
-* Once this has run, you should be able to activate the environment:
-
-    ```
-    activate gds
-    ```
-
 
 ## Check
 
 To check things have installed correctly, an additional file is included, `check_gds_stack.ipynb`. To run the check, open a terminal (macOS/Linux) or the Anaconda Command Prompt (Windows), navigate to the folder as showed above and activate the environment:
 
-* macOS/Linux:
-
     ```
-    source activate gds
-    ```
-
-* Windows:
-
-    ```
-    activate gds
+    conda activate gds
     ```
 
 You should now see `(gds)` on the beginning of the line at the terminal/command prompt. You can now run the test as:
