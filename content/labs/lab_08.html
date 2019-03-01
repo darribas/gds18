@@ -11921,7 +11921,7 @@ memory usage: 40.1+ KB
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that, in comparison to previous datasets, this one is provided in a new format, <code>.geojson</code>. GeoJSON files are a plain text file (you can open it on any text editor and see its contents) that follows the structure of the JSON format, widely used to exchange information over the web, adapted for geographic data, hence the <code>geo</code> at the front. GeoJSON files have gained much popularity with the rise of web mapping and are quickly becoming a de-facto standard for small datasets because they are simple and easy to read in many different platforms. As you can see above, reading them in Python is exactly the same as reading a shapefile, for example.</p>
+<p>Note that, in comparison to previous datasets, this one is provided in a new format, <code>.geojson</code>. GeoJSON files are a plain text file (you can open it on any text editor and see its contents) that follows the structure of the JSON format, widely used to exchange information over the web, adapted for geographic data, hence the <code>geo</code> at the front. GeoJSON files have gained much popularity with the rise of web mapping and are quickly becoming a de-facto standard for small datasets because they are readable by humans and by many different platforms. As you can see above, reading them in Python is exactly the same as reading a shapefile, for example.</p>
 <p>Before we jump into exploring the data, one additional step that will come in handy down the line. Not every variable in the table is an attribute that we will want for the clustering. In particular, we are interested in review ratings, so we will only consider those. Hence, let us first manually write them so they are easier to subset:</p>
 
 </div>
@@ -12115,7 +12115,7 @@ memory usage: 40.1+ KB
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A geodemographic analysis involves the classification of the areas that make up a greographical map into groups or categories of observations that are similar within each other but different between them. The classification is carried out using a statistical clustering algorithm that takes as input a set of attributes and returns the group ("labels" in the terminology) each observation belongs to. Depending on the particular algorithm employed, additional parameters, such as the desired number of clusters employed or more advanced tuning parameters (e.g. bandwith, radius, etc.), also need to be entered as inputs. For our geodemographic classification of AirBnb ratings in Inner London, we will use one of the most popular clustering algorithms: K-means. This technique only requires as input the observation attributes and the final number of groups that we want it to cluster the observations into. In our case, we will use five to begin with as this will allow us to have a closer look into each of them.</p>
-<p>Although the underlying algorithm is not trivial, running K-means in Python is fairly straightforward thanks to <code>scikit-learn</code>. Similar to the extensive set of available algorithms in the library, its computation is a matter of two lines of code. First, we need to specify the parameters in the <code>KMeans</code> method (which is part of <code>scikit-learn</code>'s <code>cluster</code> submodule). Note that, at this point, we do not even need to pass the data:</p>
+<p>Although the underlying algorithm is not trivial, running K-means in Python is streamlined thanks to <code>scikit-learn</code>. Similar to the extensive set of available algorithms in the library, its computation is a matter of two lines of code. First, we need to specify the parameters in the <code>KMeans</code> method (which is part of <code>scikit-learn</code>'s <code>cluster</code> submodule). Note that, at this point, we do not even need to pass the data:</p>
 
 </div>
 </div>
@@ -12807,7 +12807,7 @@ dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>However this approach quickly grows out of hand and the tables become very large to easily communicate any pattern. A good alternative is to visualize the distribution of values by category. The following optional extension shows how to transform the data so it is easy to create a fairly sophisticated plot that summarizes the table above.</p>
+<p>However this approach quickly grows out of hand and the tables become very large to easily communicate any pattern. A good alternative is to visualize the distribution of values by category. The following optional extension shows how to transform the data so you can create a fairly sophisticated plot that summarizes the table above.</p>
 <hr>
 <p><strong>[Optional extension]</strong></p>
 <p>To do this conveniently, we need to "tidy up" the table of values. Recall the meaning of <em>tidy</em> in the context of data: a dataset is tidy if every row represents an individual observation and every column a single variable. The table we want to plot to replace the summary above contains the following data:</p>
@@ -12995,7 +12995,7 @@ dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This returns a multi-indexed object. To keep things simple, we can convert it into a <code>DataFrame</code> by treating the index as additional columns:</p>
+<p>This returns a multi-indexed object, which we can convert it into a <code>DataFrame</code> by treating the index as additional columns:</p>
 
 </div>
 </div>
@@ -14119,7 +14119,7 @@ dtype: float64</pre>
 <p><a rel="repo" href="https://github.com/darribas/gds18"><img alt="@darribas/gds18" style="border-width:0" src="../../GitHub-Mark.png" /></a></p>
 <p>This notebook, as well as the entire set of materials, code, and data included
 in this course are available as an open Github repository available at: <a href="https://github.com/darribas/gds18"><code>https://github.com/darribas/gds18</code></a></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18 - Lab 8&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 
 </div>
 </div>
