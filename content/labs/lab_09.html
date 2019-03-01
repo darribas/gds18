@@ -11954,7 +11954,7 @@ Wall time: 4.93 s
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Random-sample-of-tweets">Random sample of tweets<a class="anchor-link" href="#Random-sample-of-tweets">&#182;</a></h3><p>Once we have loaded the data, taking a random sample is a relative simple operation. Let us first perform the computations and then delve into the steps, one by one.</p>
+<h3 id="Random-sample-of-tweets">Random sample of tweets<a class="anchor-link" href="#Random-sample-of-tweets">&#182;</a></h3><p>Once we have loaded the data, we can take a random sample. Let us first perform the computations and then delve into the steps, one by one:</p>
 
 </div>
 </div>
@@ -12147,7 +12147,7 @@ memory usage: 7.0+ KB
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>There is one catch to this. As the <code>Index</code> tells us, the table has 298 entries; however, the column <code>tweet_count</code> only has 297 elements with an actual number. In other words, we have a missing value in the column. The reason behind it goes to how the <code>groupby</code> operation we have performed above works and it is a bit intricate to explain here. But the solution is rather simple and it is also much more widely applicable in other contexts, so we will go through it with a bit more detail.</p>
+<p>There is one catch to this. As the <code>Index</code> tells us, the table has 298 entries; however, the column <code>tweet_count</code> only has 297 elements with an actual number. In other words, we have a missing value in the column. The reason behind it relates to how the <code>groupby</code> operation we have performed above works and it is a bit intricate to explain here. But the solution is less involved and it is also much more widely applicable in other contexts, so we will go through it with a bit more detail.</p>
 <p>Essentially the problem is that there is one area that does not have any tweets occurring. Let us check this is the case. First, let us find the LSOA with no value in <code>tweet_count</code>:</p>
 
 </div>
@@ -12690,7 +12690,7 @@ Name: CT00100001, dtype: int64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this case, the pattern in the raw counts is so strong that the adjustment by population does not have a huge effect, but in other contexts mapping rates can yield very different results than mapping simple counts.</p>
+<p>In this case, the pattern in the raw counts is so strong that the adjustment by population does not have a huge effect, but in other contexts mapping rates can yield very different results than mapping counts directly.</p>
 
 </div>
 </div>
@@ -12855,7 +12855,7 @@ plt.show()
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Using a hexagonal binning can be a quick solution when we do not have a good polygon layer to overlay the points directly and some of its properties, such as the equal size of each polygon, can help alleviate some of the problems with a "bad" irregular topology (one that does not fit the underlying point generating process). However, it does not get around the issue of the modifiable areal unit problem (M.A.U.P., see Lecture 4): at the end of the day, we are still imposing arbitrary boundary lines and aggregating based on them, so the possibility of mismatch with the underlying distribution of the point pattern is very real.</p>
 <p>One way to work around this problem is to avoid aggregating altogether. Instead, we can aim at estimating the <em>continuous</em> observed probability distribution. The most commonly used method to do this is the so called <em>kernel density estimate</em> (KDE). The idea behind KDEs is to count the number of points in a <em>continious</em> way. Instead of using discrete counting, where you include a point in the count if it is inside a certain boundary and ignore it otherwise, KDEs use functions (kernels) that include points but give different weights to each one depending of how far of the location where we are counting the point is.</p>
-<p>The actual algorithm to estimate a kernel density is not trivial but its application in Python is extremely simplified by the use of Seaborn's <code>kdeplot</code> command. Same as above, let us first see how to create the simplest possible KDE and then we will create a full-fledge map.</p>
+<p>The actual algorithm to estimate a kernel density is not trivial but its application in Python is extremely simplified by the use of Seaborn's <code>kdeplot</code> command. Same as above, let us first see how to create a quick KDE and then we will create a full-fledge map.</p>
 
 </div>
 </div>
@@ -13305,7 +13305,7 @@ plt.show()
 <p>Can you create a similar plot as above but, in addition, display also those points that are cores?</p>
 <hr>
 <h3 id="Advanced-plotting">Advanced plotting<a class="anchor-link" href="#Advanced-plotting">&#182;</a></h3><p><strong>NOTE</strong> Please mind this final section of the tutorial is <strong>OPTIONAL</strong>, so do not feel forced to complete it, this will not be covered in the assignment and you will still be able to get a good mark without completing it (also, including any of the following in the assignment does NOT guarantee a better mark).</p>
-<p>As we have seen, the choice of parameters plays a crucial role in the number, shape and type of clusters founds in a dataset. To allow an easier exploration of these effects, in this section we will turn the computation and visualization of <code>DBSCAN</code> outputs into a single function. This in turn will allow us to build an easy interactive tool later on.</p>
+<p>As we have seen, the choice of parameters plays a crucial role in the number, shape and type of clusters founds in a dataset. To allow an easier exploration of these effects, in this section we will turn the computation and visualization of <code>DBSCAN</code> outputs into a single function. This in turn will allow us to build an interactive tool later on.</p>
 <p>Below is a function that accomplishes just that:</p>
 
 </div>
