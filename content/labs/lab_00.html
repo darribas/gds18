@@ -11836,7 +11836,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The main computational tool you will be using during this course is <a href="http://jupyter.org/">Jupyter Lab</a>. The Lab is an app to interact with scientific computing, mainly through the so-called Jupyter notebooks. Notebooks are a convenient way to thread text, code and the output it produces in a simple file that you can then share, edit and modify. You can think of notebooks as the Word document of Data Scientists.</p>
+<p>The main computational tool you will be using during this course is <a href="http://jupyter.org/">Jupyter Lab</a>. The Lab is an app to interact with scientific computing, mainly through the so-called Jupyter notebooks. Notebooks are a convenient way to thread text, code and the output it produces in a single file that you can then share, edit and modify. You can think of notebooks as the Word document of Data Scientists.</p>
 
 </div>
 </div>
@@ -12606,7 +12606,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>However, the strength of Python as a data analysis tool comes from the extensions provided separately that add functionality and provide access to much more sophisticated data structures and functions. These come in the form of packages, or libraries, that once installed need to be imported into a session.</p>
-<p>In this course, we will be using many of the core libraries of what has been called the "PyData stack", the set of libraries that make Python a full-fledge system for Data Science. We will introduce them gradually as we need them for particular tasks but, for now, let us have a look at the foundational library, <a href="http://www.numpy.org/">numpy</a> (short for numerical Python). Importing it is simple:</p>
+<p>In this course, we will be using many of the core libraries of what has been called the "PyData stack", the set of libraries that make Python a full-fledge system for Data Science. We will introduce them gradually as we need them for particular tasks but, for now, let us have a look at the foundational library, <a href="http://www.numpy.org/">numpy</a> (short for numerical Python). Importing it involves the following line of code:</p>
 
 </div>
 </div>
@@ -12722,7 +12722,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>A basic feature of Python is the ability to assign a name to different "things", or objects. These can also be called sometimes "variables". We have already seen that in the example above but, to make it more explicit, let us make it even simpler. For example, an object can be a single number:</p>
+<p>A basic feature of Python is the ability to assign a name to different "things", or objects. These can also be called sometimes "variables". We have already seen that in the example above but, let us make it more explicit. For example, an object can be a single number:</p>
 
 </div>
 </div>
@@ -12939,11 +12939,10 @@ Return evenly spaced values within a given interval.
 Values are generated within the half-open interval ``[start, stop)``
 (in other words, the interval including `start` but excluding `stop`).
 For integer arguments the function is equivalent to the Python built-in
-`range &lt;http://docs.python.org/lib/built-in-funcs.html&gt;`_ function,
-but returns an ndarray rather than a list.
+`range` function, but returns an ndarray rather than a list.
 
 When using a non-integer step, such as 0.1, the results will often not
-be consistent.  It is better to use ``linspace`` for these cases.
+be consistent.  It is better to use `numpy.linspace` for these cases.
 
 Parameters
 ----------
@@ -13031,7 +13030,7 @@ array([3, 5])
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Help on built-in function arange in module numpy.core.multiarray:
+<pre>Help on built-in function arange in module numpy:
 
 arange(...)
     arange([start,] stop[, step,], dtype=None)
@@ -13041,11 +13040,10 @@ arange(...)
     Values are generated within the half-open interval ``[start, stop)``
     (in other words, the interval including `start` but excluding `stop`).
     For integer arguments the function is equivalent to the Python built-in
-    `range &lt;http://docs.python.org/lib/built-in-funcs.html&gt;`_ function,
-    but returns an ndarray rather than a list.
+    `range` function, but returns an ndarray rather than a list.
     
     When using a non-integer step, such as 0.1, the results will often not
-    be consistent.  It is better to use ``linspace`` for these cases.
+    be consistent.  It is better to use `numpy.linspace` for these cases.
     
     Parameters
     ----------
@@ -13178,7 +13176,7 @@ my name
 <ol>
 <li>You loop <em>over</em> a sequence, in this particular case the sequence of ten numbers created by <code>np.arange(10)</code>.</li>
 <li>In every step, for every element of the sequence in this case, you repeat an action. Here we are printing the same text, <code>my name</code>.</li>
-<li>Although not used in this simple loop, each of the elements you loop over can be accessed inside the loop. This can be irrelevant, as in the loop above, or extremely useful, it depends on the context. For example, see a case where you use the value of the sequence in each step:</li>
+<li>Although not used in this loop, each of the elements you loop over can be accessed inside the loop. This can be irrelevant, as in the loop above, or extremely useful, it depends on the context. For example, see a case where you use the value of the sequence in each step:</li>
 </ol>
 
 </div>
@@ -13329,7 +13327,7 @@ I am at step  9
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ignore for the moment the part <code>i%2</code>, just remember this is one way Python has to check if a number is odd. The important bit in this loop, as compared to the simpler one above, is that we are using an <code>if</code> statement to select only those candidates that meet the condition. In other words, what we are doing it looping over every number in the sequence from zero to nine (<code>for i in np.arange(10)</code>) and checking if they are even or odd (<code>if i%2</code>). If they meet the condition, they are odd, then we proceed and print them on the screen.</p>
+<p>Ignore for the moment the part <code>i%2</code>, just remember this is one way Python has to check if a number is odd. The important bit in this loop, as compared to the less complex one above, is that we are using an <code>if</code> statement to select only those candidates that meet the condition. In other words, what we are doing it looping over every number in the sequence from zero to nine (<code>for i in np.arange(10)</code>) and checking if they are even or odd (<code>if i%2</code>). If they meet the condition, they are odd, then we proceed and print them on the screen.</p>
 
 </div>
 </div>
@@ -13985,7 +13983,7 @@ I am at step  9
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li><strong>Dictionaries</strong>: dictionaries are unordered collections of "keys" and "values". A key, which can be of any kind, is the element associated with a "value", which can also be of any kind. Dictionaries are used when order is not important but you need fast and easy lookup. They are expressed in curly brackets, with keys and values being linked through columns.</li>
+<li><strong>Dictionaries</strong>: dictionaries are unordered collections of "keys" and "values". A key, which can be of any kind, is the element associated with a "value", which can also be of any kind. Dictionaries are used when order is not important but you need fast and convenient lookup. They are expressed in curly brackets, with keys and values being linked through columns.</li>
 </ul>
 <p>For example, we can think of a dictionary to store a series of names and the ages of the people they represent:</p>
 
@@ -14202,7 +14200,7 @@ I am at step  9
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The last part of this whirlwind tour on Python relates to functions, or more properly termed, methods. The motivation is that, so far, we have only seen how you can create Python code that, if you want to run again somewhere else, you need to copy and paste entirely. However, as we will see in more detail later in the course, one of the main reasons why you want to use Python for data analysis, instead of a point-and-click graphical interface like SPSS, for instance, is that you can easily reuse code and re-run analyses easily. Methods help us accomplish this by encapsulating snippets of code that perform a particular task and making them available to be called.</p>
-<p>We have already <em>used</em> methods here. When we call <code>np.arange</code>, we are using one of them. Now, we will see how to <em>create</em> a method of our own that performs the specific task we want it to do. For example, let us create a very simple method to reproduce the first loop we created above:</p>
+<p>We have already <em>used</em> methods here. When we call <code>np.arange</code>, we are using one of them. Now, we will see how to <em>create</em> a method of our own that performs the specific task we want it to do. For example, let us create a method to reproduce the first loop we created above:</p>
 
 </div>
 </div>
@@ -14212,7 +14210,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_simple_loop</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_loop</span><span class="p">():</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="k">return</span> <span class="kc">None</span>
@@ -14227,9 +14225,9 @@ I am at step  9
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Already with this simple method, there is a bunch of interesting things going on:</p>
+<p>Already with this method, there is a bunch of interesting things going on:</p>
 <ul>
-<li>First, note how we define a bit of code is a method, as oposed to plain Python: we use <code>def</code> followed by the name of our function (we have chosen <code>run_simple_loop</code>, but we anything could have done).</li>
+<li>First, note how we define a bit of code is a method, as oposed to plain Python: we use <code>def</code> followed by the name of our function (we have chosen <code>run_loop</code>, but we anything could have done).</li>
 <li>Second, we append <code>()</code> after the name, and finish the line with a colon (<code>:</code>). This is necessary and will allow us to specify requirements for the function (see below).</li>
 <li>Third, realize that everything inside a function needs to be indented. This is a core property of Python and, although some people find it odd, it enhances readibility greatly.</li>
 <li>Fourth, the piece of code to do the task we want, printing the sequence of numbers, is inside the function in the same way it was outside, only properly indented.</li>
@@ -14245,7 +14243,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_simple_loop</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_loop</span><span class="p">()</span>
 </pre></div>
 
 </div>
@@ -14293,7 +14291,7 @@ I am at step  9
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is the simplest possile method you can write: you do not require anything, just executing it, and the code produces and output (the printout) but it is not saved anywhere. The rest of this section relaxes these two aspects to allow us to build more complex, but also more useful, methods.</p>
+<p>This method only involves a limited degree of complexity: you do not require any input, and the code produces and output (the printout) but it is not saved anywhere. The rest of this section relaxes these two aspects to allow us to build more complex, but also more useful, methods.</p>
 <p>First, you can specify "arguments" to be passed that modify the behaviour of the method. Remember how we called <code>np.arange</code> with a number that implied the length of the sequence we wanted returned. We can do the same thing in our own function. The main aspect to pay attention to in this context is that the arguments need to be variables, not particular values. Let us see a modified example of our method:</p>
 
 </div>
@@ -14304,7 +14302,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_simple_loopX</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_loopX</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="k">return</span> <span class="kc">None</span>
@@ -14329,7 +14327,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_simple_loopX</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_loopX</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14362,7 +14360,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_simple_loopX</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_loopX</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14458,7 +14456,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">run_simple_loopX</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="n">run_loopX</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14513,7 +14511,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_simple_loopXout</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_loopXout</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -14538,7 +14536,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_simple_loopXout</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_loopXout</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">seq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">seq</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
@@ -14564,8 +14562,8 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[60]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">run_simple_loopX</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">run_simple_loopXout</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">run_loopX</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">run_loopXout</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14665,7 +14663,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[63]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_simple_loopXout</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">run_loopXout</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Print out the values of a sequence of certain length</span>
 <span class="sd">    ...</span>
@@ -14713,7 +14711,7 @@ I am at step  9
 <div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span>run_simple_loopXout<span class="o">?</span>
+<div class=" highlight hl-ipython3"><pre><span></span>run_loopXout<span class="o">?</span>
 </pre></div>
 
 </div>
@@ -14732,7 +14730,7 @@ I am at step  9
 
 
 <div class="output_text output_subarea ">
-<pre><span class="ansi-red-fg">Signature:</span> run_simple_loopXout<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">)</span>
+<pre><span class="ansi-red-fg">Signature:</span> run_loopXout<span class="ansi-blue-fg">(</span>x<span class="ansi-blue-fg">)</span>
 <span class="ansi-red-fg">Docstring:</span>
 Print out the values of a sequence of certain length
 ...
@@ -14746,7 +14744,7 @@ Returns
 -------
 seq   : np.array
         Sequence of values printed out
-<span class="ansi-red-fg">File:</span>      ~/code/gds18/content/labs/&lt;ipython-input-63-711822c9b574&gt;
+<span class="ansi-red-fg">File:</span>      ~/host/content/labs/&lt;ipython-input-63-5ed12024ff6b&gt;
 <span class="ansi-red-fg">Type:</span>      function
 </pre>
 </div>
@@ -14762,7 +14760,7 @@ seq   : np.array
 <div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">run_simple_loopXout</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">run_loopXout</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14779,9 +14777,9 @@ seq   : np.array
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Help on function run_simple_loopXout in module __main__:
+<pre>Help on function run_loopXout in module __main__:
 
-run_simple_loopXout(x)
+run_loopXout(x)
     Print out the values of a sequence of certain length
     ...
     
