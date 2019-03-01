@@ -11787,7 +11787,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This ensures visualizations are plotted inside the notebook</span>
@@ -11808,7 +11808,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Dataset">Dataset<a class="anchor-link" href="#Dataset">&#182;</a></h2><p>We will be exploring some of the characteristics of the population in Liverpool. To do that, we will use a dataset that contains population counts, split by ethnic origin. These counts are aggregated at the <a href="http://www.ons.gov.uk/methodology/geography/ukgeographies/censusgeography#output-area-oa">Lower Layer Super Output Area</a> (LSOA from now on). LSOAs are an official Census geography defined by the Office of National Statistics that is small enough to create variation within cities, but large enough also to preserve privacy. For that reason, many data products (Census, deprivation indices, etc.) use LSOAs as one of their main geographies.</p>
-<p>To read a "comma separated values" (<code>.csv</code>) file, we can run:</p>
+<p>Let us first set the path to the file where we store the data we will use:</p>
 
 </div>
 </div>
@@ -11823,7 +11823,59 @@ div#notebook {
 <span class="c1"># you would do:</span>
 <span class="c1"># f = &#39;liv_pop.csv&#39;</span>
 <span class="n">f</span> <span class="o">=</span> <span class="s1">&#39;data/liv_pop.csv&#39;</span>                            <span class="c1"># Path to file containing the table</span>
-<span class="n">db</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;GeographyCode&#39;</span><span class="p">)</span>    <span class="c1"># Read the table in</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>IMPORTANT</strong>: the path above might have look different in your computer. See <a href="begin.html">this introductory notebook</a> for more details about how to set your paths.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Alternatively, you can read this file from its web location too (do not run the following cell if you want to read the data locally or are currently offline):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="s1">&#39;http://darribas.org/gds18/content/labs/data/liv_pop.csv&#39;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To read a "comma separated values" (<code>.csv</code>) file, we can run:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">db</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;GeographyCode&#39;</span><span class="p">)</span>    <span class="c1"># Read the table in</span>
 </pre></div>
 
 </div>
@@ -13976,7 +14028,7 @@ dtype: int64</pre>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Note we are using <code>sns</code> instead of <code>pd</code>, as the function belongs to <code>seaborn</code> instead of <code>pandas</code>.</p>
 <p>We can quickly see most of the areas contain somewhere between 1,200 and 1,700 people, approx. However, there are a few areas that have many more, even up to 3,500 people.</p>
-<p>An additinal feature to visualize the density of values is called <code>rug</code>, and adds a little tick for each value on the horizontal axis:</p>
+<p>An additional feature to visualize the density of values is called <code>rug</code>, and adds a little tick for each value on the horizontal axis:</p>
 
 </div>
 </div>
@@ -14232,7 +14284,7 @@ way.</em></p>
 <p>Leo Tolstoy.</p>
 </blockquote>
 <p>Once you can read your data in, explore specific cases, and have a first visual approach to the entire set, the next step can be preparing it for more sophisticated analysis. Maybe you are thinking of modeling it through regression, or on creating subgroups in the dataset with particular characteristics, or maybe you simply need to present summary measures that relate to a slightly different arrangement of the data than you have been presented with.</p>
-<p>For all these cases, you first need what statistitian, and general R wizard, Hadley Wickham calls <em>"tidy data"</em>. The general idea to "tidy" your data is to convert them from whatever structure they were handed in to you into one that allows convenient and standardized manipulation, and that supports directly inputting the data into what he calls "<em>tidy</em>" analysis tools. But, at a more practical level, what is exactly <em>"tidy data"</em>? In Wickham's own words:</p>
+<p>For all these cases, you first need what statistician, and general R wizard, Hadley Wickham calls <em>"tidy data"</em>. The general idea to "tidy" your data is to convert them from whatever structure they were handed in to you into one that allows convenient and standardized manipulation, and that supports directly inputting the data into what he calls "<em>tidy</em>" analysis tools. But, at a more practical level, what is exactly <em>"tidy data"</em>? In Wickham's own words:</p>
 <blockquote><p><em>Tidy data is a standard way of mapping the meaning of a dataset to its structure. A dataset is
 messy or tidy depending on how rows, columns and tables are matched up with observations,
 variables and types.</em></p>
