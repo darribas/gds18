@@ -79,7 +79,7 @@ amount of material, and designed to take similar length in its delivery:
 
 * The
 **first part** (notebooks `lab_00` to `lab_02`) introduces the student to the main computational tools that will
-become the building blocks of the course. This includes the *Jupyter notebook*,
+become the building blocks of the course. This includes the *Jupyter Notebook*,
 as well as the basics of non-spatial data manipulation and visualisation using `pandas` and `matplotlib`.
 * The
 **second part** (notebooks `lab_03` to `lab_05`) builds on the previous one and
