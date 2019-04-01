@@ -23,7 +23,7 @@ bibliography: paper.bib
 
 This paper presents a computational learning module on Geographic Data
 Science (GDS). This resource is part of a larger set that also includes 
-a series of lecture slides, that has been used for four conscutive academic 
+a series of lecture slides, that has been used for four consecutive academic 
 years to teach the course "Geographic Data Science" at the University of 
 Liverpool.
 
