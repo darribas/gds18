@@ -91,7 +91,7 @@ spatial weights matrices.
 * The **third part** (notebooks `lab_06` to `lab_09`) relies on the previous two
 to show the intuition and application of more advanced,
 explicitly spatial computational techniques. In particular, this set of
-notebooks cover exploratory spatial data analysis [ESDA, @anselin1999interactive], point patterns [@boots1988point], and
+notebooks covers exploratory spatial data analysis [ESDA, @anselin1999interactive], point patterns [@boots1988point], and
 unsupervised learning, including both geodemographic analysis [@harris2005geodemographics] as well as
 regionalisation algorithms [@duque2007supervised] that impose an additional spatial constraint.
 
