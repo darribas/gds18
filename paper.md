@@ -106,10 +106,10 @@ Geographic Data Science and Python programming.
 There are ten Jupyter
 notebooks, each covering materials that would usually be presented to
 the student at a rate of one per week. Since the course expects no previous
-knowledge on the core theoretical concepts, students first attend a 1h. 
+knowledge on the core theoretical concepts, students first attend a 1h 
 lecture every week
 where the main ideas behind each notebook are presented, and they are 
-encouraged to examine the notebook before the computer lab (2h./week),
+encouraged to examine the notebook before the computer lab (2h/week),
 following a semi-flipped classroom approach [@lage2000inverting]. In the
 lab, following an enquiry-based learning approach 
 [@hutchings2006principles], they are expected to work individually and at
