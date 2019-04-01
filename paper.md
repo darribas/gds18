@@ -113,16 +113,14 @@ encouraged to examine the notebook before the computer lab (2h/week),
 following a semi-flipped classroom approach [@lage2000inverting]. In the
 lab, following an enquiry-based learning approach 
 [@hutchings2006principles], they are expected to work individually and at
-their own pace through each notebook. Although the learning emphasis
-is placed first and foremost on the student, there is support provided mainly
-through two
-channels: within the lab, there is at least one instructor for every 15
-students answering questions one-on-one or in small groups; beyond contact
-time, the class
-has access to an online discussion forum monitored by the course leader, where
-students are encouraged to post not only questions but also answers and
-responses both to other students and to their original enquiry, in case they
-solve it themselves.
+their own pace through each notebook. 
+The student-centered character of the course is complemented through two 
+channels of support. First, within the lab, at least one instructor 
+for every 15 students answers questions one-on-one or in small groups. Second,
+the class has access to an online discussion forum monitored by the course
+leader. Within this environment, students are encouraged to post not only
+questions but also responses both to other students and to their original
+enquiry, in case they solve it themselves.
 
 Each notebook is conceived as a self-contained computational narrative where theoretical
 concepts are threaded with programming illustrations. The aim of this strategy
