@@ -29,8 +29,6 @@ Liverpool.
 
 # Statement of need
 
-Although the content presented is relevant, the
-currently available set of options to teach it leaves clear gaps. 
 Data Science [@donoho201750] has become one of the most demanded skills thanks to an
 explosion in the availability of data [@kitchin2014data]. Most of these new sources are, 
 directly or indirecly, geographic in that they can be related to a particular
