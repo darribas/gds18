@@ -27,12 +27,16 @@ access them is through the website:
 ```
 @article{darribas_gds18,
   author = {Dani Arribas-Bel},
-  title = {A Course on Geographic Data Science},
+  title = {A course on Geographic Data Science},
   year = 2019,
   journal = {The Journal of Open Source Education},
-  doi = {10.5281/zenodo.2650534}
+  volume = 2,
+  number = 14,
+  doi = {https://doi.org/10.21105/jose.00042}
 }
 ```
+
+Arribas-Bel, (2019). A course on Geographic Data Science. Journal of Open Source Education, 2(14), 42, https://doi.org/10.21105/jose.00042
 
 ## License
 
