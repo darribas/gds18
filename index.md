@@ -13,8 +13,8 @@ A pdf copy of the module handbook can be downloaded [here](content/handbook/hand
 
 ### Citation
 
-If you use material from this course, I would appreciate if you used the
-following citation:
+This course is the basis for a publication on the [Journal of Open Source
+Education](https://jose.theoj.org/). If you use material from this course, I would appreciate if you used the following citation:
 
 [![DOI](http://jose.theoj.org/papers/10.21105/jose.00042/status.svg)](https://doi.org/10.21105/jose.00042)
 [![DOI](https://zenodo.org/badge/145456898.svg)](https://zenodo.org/badge/latestdoi/145456898)
