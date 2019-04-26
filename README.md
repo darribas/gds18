@@ -20,6 +20,8 @@ access them is through the website:
 
 ## Citation
 
+[![DOI](http://jose.theoj.org/papers/10.21105/jose.00042/status.svg)](https://doi.org/10.21105/jose.00042)
+
 [![DOI](https://zenodo.org/badge/145456898.svg)](https://zenodo.org/badge/latestdoi/145456898)
 
 ```
