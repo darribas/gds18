@@ -11863,6 +11863,15 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>IMPORTANT</strong>: the paths above might have look different in your computer. See <a href="begin.html">this introductory notebook</a> for more details about how to set your paths.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Creating-the-table-from-the-previous-notebook">Creating the table from the previous notebook<a class="anchor-link" href="#Creating-the-table-from-the-previous-notebook">&#182;</a></h3><p>It is not only that data are not ready to analyze when you get a hold on them. Sometimes, there is not such thing as <em>the dataset</em> to analyze. Instead, what you have is a collection of separated files, sometimes with different structures, that you need to bring together to begin with. This is one of the areas where a bit of scripting skills can help you a long way. While in a traditional point-and-click program like Microsoft Excel or SPSS, you would have to repeat the steps every time you wanted to incorporate a new dataset, with a bit of Python ninja tricks, you can write code that will do it for you as many times as you need.</p>
 <p>We will begin jumping straight into the analysis of population in Liverpool, organized by country of birth, at the Local Super Output Area (LSOA) level. Because the Census Data Pack contains a lot of data and very many different tables, you will have to bear with us and trust that what we are extracting is exactly the data of interest. This will speed up the process to walk through the reading, processing and manipulating of a dataset. Once you are familiar with these skills, the final section goes into how to explore the entire pack with more detail.</p>
 <p>To read a "comma separated values" (<code>.csv</code>) file, we can run:</p>
@@ -12610,7 +12619,7 @@ memory usage: 14.0+ KB
 <div class="text_cell_render border-box-sizing rendered_html">
 <hr>
 <p><strong>[Renaming columns]</strong></p>
-<p><strong>IMPORTANT</strong>: some of the elemnts in this part are more advanced hence optional. If you want to move quickly through the lab, simply run the code cells without paying much attention to what it does. Once you have become more familiar with the rest of the tutorial, return here and work through the logic.</p>
+<p><strong>IMPORTANT</strong>: some of the elements in this part are more advanced hence optional. If you want to move quickly through the lab, simply run the code cells without paying much attention to what it does. Once you have become more familiar with the rest of the tutorial, return here and work through the logic.</p>
 <p>The table we have compiled contains exactly what we wanted. However, the names of the columns are a bit unintuitive, to say the least. It would be much handier if we could rename the columns into something more human readable. The easiest way to do that in <code>pandas</code> is by creating a dictionary that maps the original name into the desired one, and then applying it to the <code>DataFrame</code> with the command <code>rename</code>. Let us walk through the steps necessary, one by one:</p>
 <ul>
 <li>Create a dictionary that maps the codes to the names. For this, we can use the list we have created before (<code>region_variables</code>), and what we have learnt about querying tables, combined with a small <code>for</code> loop.</li>
@@ -12685,7 +12694,7 @@ memory usage: 14.0+ KB
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>Because we know that each of these variables are totals for each group, we can further declutter the names by removing the piece of the string <code>": Total"</code>. A simple loop can help us:</li>
+<li>Because we know that each of these variables are totals for each group, we can further declutter the names by removing the piece of the string <code>": Total"</code>. A <code>for</code> loop can help us:</li>
 </ul>
 
 </div>
@@ -12737,7 +12746,7 @@ memory usage: 14.0+ KB
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>With the dictionary in hand, renaming the columns is as easy as:</li>
+<li>With the dictionary in hand, renaming the columns can be done by:</li>
 </ul>
 
 </div>
@@ -13883,7 +13892,7 @@ memory usage: 14.0+ KB
 <p><a rel="repo" href="https://github.com/darribas/gds18"><img alt="@darribas/gds18" style="border-width:0" src="../../GitHub-Mark.png" /></a></p>
 <p>This notebook, as well as the entire set of materials, code, and data included
 in this course are available as an open Github repository available at: <a href="https://github.com/darribas/gds18"><code>https://github.com/darribas/gds18</code></a></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18 - Lab 2&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 
 </div>
 </div>

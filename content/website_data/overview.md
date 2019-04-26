@@ -3,7 +3,7 @@
 
 ### Aims
 
-The module provides students with core competences in Geographic Data Science (GDS). This includes the following:
+The module provides students with little or no prior knowledge core competences in Geographic Data Science (GDS). This includes the following:
 
 * Advancing their statistical and numerical literacy.
 * Introducing basic principles of programming and state-of-the-art computational tools for GDS.

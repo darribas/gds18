@@ -11873,7 +11873,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The easiest way to get from a file to a quick visualization of the data is by loading it as a <code>GeoDataFrame</code> and calling the <code>plot</code> command. The main library employed for all of this is <code>geopandas</code> which is a geospatial extension of the <code>pandas</code> library, already introduced before. <code>geopandas</code> supports exactly the same functionality that <code>pandas</code> does (in fact since it is built on top of it, so most of the underlying machinery is pure <code>pandas</code>), plus a wide range of spatial counterparts that make manipulation and general "munging" of spatial data as easy as non-spatial tables.</p>
+<p>The most direct way to get from a file to a quick visualization of the data is by loading it as a <code>GeoDataFrame</code> and calling the <code>plot</code> command. The main library employed for all of this is <code>geopandas</code> which is a geospatial extension of the <code>pandas</code> library, already introduced before. <code>geopandas</code> supports exactly the same functionality that <code>pandas</code> does (in fact since it is built on top of it, so most of the underlying machinery is pure <code>pandas</code>), plus a wide range of spatial counterparts that make manipulation and general "munging" of spatial data very similar to non-spatial tables.</p>
 <p>In two lines of code, we will obtain a graphical representation of the spatial data contained in a file that can be in many formats; actually, since it uses the same drivers under the hood, you can load pretty much the same kind of vector files that QGIS permits. Let us start by plotting single layers in a crude but quick form, and we will build style and sophistication into our plots later on.</p>
 
 </div>
@@ -12276,7 +12276,7 @@ memory usage: 1.0+ KB
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Again, this is not the prettiest way to display the roads maybe, and you might want to change a few parameters such as colors, etc. All of this is possible, as we will see below, but this gives us an easy check of what lines look like.</p>
+<p>Again, this is not the prettiest way to display the roads maybe, and you might want to change a few parameters such as colors, etc. All of this is possible, as we will see below, but this gives us a quick check of what lines look like.</p>
 
 </div>
 </div>
@@ -12719,7 +12719,7 @@ rwy_tun.loc['0ACD196C313D4F8DE050A00A568A6F6F', 'geometry']
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Adding a title is a simple extra line, if we are creating the plot within a figure, as we just did. To include text on top of the figure:</p>
+<p>Adding a title is an extra line, if we are creating the plot within a figure, as we just did. To include text on top of the figure:</p>
 
 </div>
 </div>
@@ -13071,7 +13071,7 @@ rwy_tun.loc['0ACD196C313D4F8DE050A00A568A6F6F', 'geometry']
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The coordindate reference system (CRS) is the way geographers and cartographers have to represent a three-dimentional object, such as the round earth, on a two-dimensional plane, such as a piece of paper or a computer screen. If the source data contain information on the CRS of the data, it is very easy to modify this in a <code>GeoDataFrame</code>. First let us check if we have the information stored properly:</p>
+<p>The coordindate reference system (CRS) is the way geographers and cartographers have to represent a three-dimentional object, such as the round earth, on a two-dimensional plane, such as a piece of paper or a computer screen. If the source data contain information on the CRS of the data, we can modify this in a <code>GeoDataFrame</code>. First let us check if we have the information stored properly:</p>
 
 </div>
 </div>
@@ -13122,7 +13122,7 @@ rwy_tun.loc['0ACD196C313D4F8DE050A00A568A6F6F', 'geometry']
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>As we can see, there is information stored about the reference system: it is using the datum "OSGB36", which is a projection in meters (<code>m</code> in units). There are also other less decipherable parameters but we do not need to worry about them right now.</p>
-<p>If we want to modify this and "reproject" the polygons into a different CRS, the easiest way is to find the <a href="https://en.wikipedia.org/wiki/International_Association_of_Oil_%26_Gas_Producers#European_Petroleum_Survey_Group">EPSG</a> code online (<a href="http://epsg.io/">epsg.io</a> is a good one, although there are others too). For example, if we wanted to transform the dataset into lat/lon coordinates, we would use its EPSG code, 4326:</p>
+<p>If we want to modify this and "reproject" the polygons into a different CRS, the quickest way is to find the <a href="https://en.wikipedia.org/wiki/International_Association_of_Oil_%26_Gas_Producers#European_Petroleum_Survey_Group">EPSG</a> code online (<a href="http://epsg.io/">epsg.io</a> is a good one, although there are others too). For example, if we wanted to transform the dataset into lat/lon coordinates, we would use its EPSG code, 4326:</p>
 
 </div>
 </div>
@@ -13231,7 +13231,7 @@ plt.show()
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>So far we have considered many aspects of plotting <em>a single</em> layer of data. However, in many cases, an effective map will require more than one: for example we might want to display streets on top of the polygons of neighborhoods, and add a few points for specific locations we want to highlight. At the very heart of GIS is the possibility to combine spatial information from different sources by overlaying it on top of each other, and this is fully supported in Python.</p>
-<p>Essentially, combining different layers on a single map boils down to adding each of them to the same axis in a sequential way, as if we were literally overlaying one on top of the previous one. For example, let us get the simplest possible plot, one with the polygons from the LSOAs and the tunnels on top of them:</p>
+<p>Essentially, combining different layers on a single map boils down to adding each of them to the same axis in a sequential way, as if we were literally overlaying one on top of the previous one. For example, let us get the most direct plot, one with the polygons from the LSOAs and the tunnels on top of them:</p>
 
 </div>
 </div>
@@ -13552,7 +13552,7 @@ plt.show()
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Once we have produced a map we are content with, we might want to save it to a file so we can include it into a report, article, website, etc. Exporting maps in Python is as simple as replacing <code>plt.show</code> by <code>plt.savefig</code> at the end of the code block to specify where and how to save it. For example to save the previous map into a <code>png</code> file in the same folder where the notebook is hosted:</p>
+<p>Once we have produced a map we are content with, we might want to save it to a file so we can include it into a report, article, website, etc. Exporting maps in Python involves replacing <code>plt.show</code> by <code>plt.savefig</code> at the end of the code block to specify where and how to save it. For example to save the previous map into a <code>png</code> file in the same folder where the notebook is hosted:</p>
 
 </div>
 </div>
@@ -13831,7 +13831,7 @@ plt.show()
 <ul>
 <li>Join tabular data</li>
 </ul>
-<p>Now we have both tables loaded into the session: on the one hand, the spatial data are contained in <code>lsoas</code>, while all the tabular data are in <code>lsoa_orig_sub</code>. To be able to work with the two together, we need to <em>connect</em> them. In <code>pandas</code> language, this is called "join" and the key element in joins are the <em>indices</em>, the names assigned to each row of the tables. This is what we determine, for example, when we indicate <code>index_col</code> when reading a <code>csv</code>. In the case above, the index is set on <code>GeographyCode</code>. In the case of the <code>GeoDataFrame</code>, there is not any specific index, but a simple unamed sequence. The spatial table does have however a column called <code>LSOA11CD</code> which represents the code for each polygon, and this one actually matches those in <code>GeographyCode</code> in the population table.</p>
+<p>Now we have both tables loaded into the session: on the one hand, the spatial data are contained in <code>lsoas</code>, while all the tabular data are in <code>lsoa_orig_sub</code>. To be able to work with the two together, we need to <em>connect</em> them. In <code>pandas</code> language, this is called "join" and the key element in joins are the <em>indices</em>, the names assigned to each row of the tables. This is what we determine, for example, when we indicate <code>index_col</code> when reading a <code>csv</code>. In the case above, the index is set on <code>GeographyCode</code>. In the case of the <code>GeoDataFrame</code>, there is not any specific index, but an unamed sequence. The spatial table does have however a column called <code>LSOA11CD</code> which represents the code for each polygon, and this one actually matches those in <code>GeographyCode</code> in the population table.</p>
 
 </div>
 </div>
@@ -14053,7 +14053,7 @@ plt.show()
 <p>Let us quickly run through the logic of joins:</p>
 <ul>
 <li>First, it is an operation in which you are "attaching" some data to a previously existing one. This does not always need to be like this but, for now, we will only consider this case. In particular, in the operation above, we are attaching the population data in <code>lsoa_orig_sub</code> to the spatial table <code>lsoas</code>.</li>
-<li>Second, note how the main table does not need to be indexed in the shared column for the join to be possible, it only needs to contain it. In this case, the index of <code>lsoas</code> is a simple sequence, but the relevant codes are stored in the column <code>LSOA11CD</code>.</li>
+<li>Second, note how the main table does not need to be indexed in the shared column for the join to be possible, it only needs to contain it. In this case, the index of <code>lsoas</code> is a sequence, but the relevant codes are stored in the column <code>LSOA11CD</code>.</li>
 <li>Third, the table that is being attached <em>does</em> need to be indexed on the relevant column. This is fine with us because <code>lsoa_orig_sub</code> <em>is</em> already indexed on the relevant ID codes.</li>
 <li>Finally, note how the join operation contains two arguments: one is obviously the table we want to attach; the second one, preceded by "<code>on</code>" relates to the column in the main table that is required to be matched with the index of the table being attached. In this case, the relevant ID codes are in the column <code>LSOA11CD</code>, so we specify that.</li>
 </ul>
@@ -14352,7 +14352,7 @@ plt.show()
 <ul>
 <li>Point in polygon (PiP)</li>
 </ul>
-<p>Knowing whether a point is inside a polygon is conceptually a simple exercise but computationally a tricky task to perform. The simplest way to perform this operation in <code>GeoPandas</code> is through the <code>contains</code> method, available for each polygon object.</p>
+<p>Knowing whether a point is inside a polygon is conceptually a straightforward exercise but computationally a tricky task to perform. The way to perform this operation in <code>GeoPandas</code> is through the <code>contains</code> method, available for each polygon object.</p>
 
 </div>
 </div>
@@ -14994,8 +14994,7 @@ plt.show()
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="[Extension-III]-Advanced-GIS-operations"><code>[Extension III]</code> Advanced GIS operations<a class="anchor-link" href="#[Extension-III]-Advanced-GIS-operations">&#182;</a></h2><p><strong>[NOTE]</strong> If you are going to try some of these operations, make sure to have the library <a href="https://pypi.python.org/pypi/Rtree/"><code>rtree</code></a> correctly installed.</p>
-<ul>
+<h2 id="[Extension-III]-Advanced-GIS-operations"><code>[Extension III]</code> Advanced GIS operations<a class="anchor-link" href="#[Extension-III]-Advanced-GIS-operations">&#182;</a></h2><ul>
 <li>Spatial joins</li>
 </ul>
 <blockquote><p><a href="https://github.com/geopandas/geopandas/blob/master/examples/spatial_joins.ipynb">https://github.com/geopandas/geopandas/blob/master/examples/spatial_joins.ipynb</a></p>
@@ -15017,7 +15016,7 @@ plt.show()
 <p><a rel="repo" href="https://github.com/darribas/gds18"><img alt="@darribas/gds18" style="border-width:0" src="../../GitHub-Mark.png" /></a></p>
 <p>This notebook, as well as the entire set of materials, code, and data included
 in this course are available as an open Github repository available at: <a href="https://github.com/darribas/gds18"><code>https://github.com/darribas/gds18</code></a></p>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18 - Lab 3&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />&lt;span xmlns:dct="<a href="http://purl.org/dc/terms/">http://purl.org/dc/terms/</a>" property="dct:title"&gt;Geographic Data Science'18&lt;/span&gt; by &lt;a xmlns:cc="<a href="http://creativecommons.org/ns#">http://creativecommons.org/ns#</a>" href="<a href="http://darribas.org">http://darribas.org</a>" property="cc:attributionName" rel="cc:attributionURL"&gt;Dani Arribas-Bel&lt;/a&gt; is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
 
 </div>
 </div>
