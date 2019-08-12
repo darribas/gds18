@@ -1,5 +1,12 @@
 # Geographic Data Science
 
+---
+
+**IMPORTANT**: this is the repository for the 2018 version of the GDS course.
+A more recent (and recommended) one is available at https://github.com/darribas/gds19
+
+---
+
 | OS      | Status |
 | ------- | -----------------|
 | Linux & macOS   | [![Build Status](https://travis-ci.org/darribas/gds18.svg?branch=master)](https://travis-ci.org/darribas/gds18) |
@@ -16,7 +23,7 @@ access them is through the website:
 
 > [http://darribas.org/gds18](http://darribas.org/gds18)
 
-**NOTE**: This course is an evolution and update of [GDS'18](http://darribas.org/gds18).
+**NOTE**: This course is an evolution and update of [GDS'17](http://darribas.org/gds17).
 
 ## Citation
 
