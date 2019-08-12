@@ -18,6 +18,23 @@ access them is through the website:
 
 **NOTE**: This course is an evolution and update of [GDS'18](http://darribas.org/gds18).
 
+## Citation
+
+[![DOI](http://jose.theoj.org/papers/10.21105/jose.00042/status.svg)](https://doi.org/10.21105/jose.00042)
+[![DOI](https://zenodo.org/badge/145456898.svg)](https://zenodo.org/badge/latestdoi/145456898)
+
+```
+@article{darribas_gds18,
+  author = {Dani Arribas-Bel},
+  title = {A course on Geographic Data Science},
+  year = 2019,
+  journal = {The Journal of Open Source Education},
+  volume = 2,
+  number = 14,
+  doi = {https://doi.org/10.21105/jose.00042}
+}
+```
+
 ## License
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Geographic Data Science'18</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://darribas.org" property="cc:attributionName" rel="cc:attributionURL">Dani Arribas-Bel</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

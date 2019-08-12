@@ -87,7 +87,7 @@ handbook:
 	rm handbook.md
 
 test_stack:
-	source activate gds
+	conda activate gds
 	jupyter nbconvert --execute --stdout content/infrastructure/check_gds_stack.ipynb
 	source deactivate
 

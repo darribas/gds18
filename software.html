@@ -176,9 +176,7 @@
 
 <p>Once you have a fully working conda installation in your computer, you can setup an isolated environment that contains all the required libraries by running the install script provided with this guide. Exact instructions vary depending on the platform you are on.</p>
 
-<h4 id="macoslinux">macOS/Linux</h4>
-
-<p>Open up a terminal (“Applications –&gt; Utilities –&gt; Terminal” in macOS and  “ctr+alt+T” in Linux) and run the following commands:</p>
+<p>Open up a terminal (“Anaconda Command Prompt” in Windows, “Applications –&gt; Utilities –&gt; Terminal” in macOS and  “ctr+alt+T” in Linux) and run the following commands:</p>
 
 <ul>
   <li>
@@ -196,32 +194,7 @@
   <li>
     <p>Once this has run, you should be able to activate the environment:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  source activate gds
-</code></pre></div>    </div>
-  </li>
-</ul>
-
-<h4 id="windows">Windows</h4>
-
-<p>Open up the Anaconda Command Prompt (search for it on the Startup Menu) and run the following commands:</p>
-
-<ul>
-  <li>
-    <p>Navigate to the folder where this file is (e.g. Downloads):</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cd /path/to/folder/
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Execute the following command:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda-env create -f install_gds_stack.yml
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Once this has run, you should be able to activate the environment:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  activate gds
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  conda activate gds
 </code></pre></div>    </div>
   </li>
 </ul>
@@ -230,20 +203,10 @@
 
 <p>To check things have installed correctly, an additional file is included, <code class="highlighter-rouge">check_gds_stack.ipynb</code>. To run the check, open a terminal (macOS/Linux) or the Anaconda Command Prompt (Windows), navigate to the folder as showed above and activate the environment:</p>
 
-<ul>
-  <li>
-    <p>macOS/Linux:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  source activate gds
-</code></pre></div>    </div>
-  </li>
-  <li>
-    <p>Windows:</p>
-
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  activate gds
-</code></pre></div>    </div>
-  </li>
-</ul>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```
+conda activate gds
+```
+</code></pre></div></div>
 
 <p>You should now see <code class="highlighter-rouge">(gds)</code> on the beginning of the line at the terminal/command prompt. You can now run the test as:</p>
 
@@ -259,7 +222,7 @@
       Content by <a href="http://darribas.org">Dani Arribas-Bel</a>.
 
 
-  Content licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0</a>.
+  Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA 4.0</a>.
 
 
 Created with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://getbootstrap.com/">Bootstrap</a>.
