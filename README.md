@@ -2,8 +2,10 @@
 
 ---
 
-**IMPORTANT**: this is the repository for the 2018 version of the GDS course.
-A more recent (and recommended) one is available at https://github.com/darribas/gds19
+**`IMPORTANT`**: this is the repository for the 2018 version of the GDS course.
+A more recent (and recommended) one is available at:
+
+> [https://github.com/darribas/gds19](https://github.com/darribas/gds19)
 
 ---
 
